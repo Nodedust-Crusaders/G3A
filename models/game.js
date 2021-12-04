@@ -11,11 +11,34 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      models.Game.belongsTo(models.Publisher, {
+        foreignKey: 'publisherId'
+      })
+      models.Game.belongsTo(models.Currency, {
+        foreignKey: 'currencyId'
+      })
+      models.Game.belongsTo(models.Category, {
+        foreignKey: 'categoryId'
+      })
+      models.Game.belongsTo(models.Platform, {
+        foreignKey: 'platformId'
+      })
+
+      models.Game.belongsToMany(models.User, {
+        through: 'Review'
+      })
+      models.Game.hasMany(models.Review)
+
+      models.Game.belongsToMany(models.User, {
+        through: 'Purchase'
+      })
+      models.Game.hasMany(models.Purchase)
     }
   };
   Game.init({
     title: DataTypes.STRING,
     description: DataTypes.STRING,
+    releaseYear: DataTypes.INTEGER,
     rating: DataTypes.DOUBLE,
     price: DataTypes.DOUBLE,
     discount: DataTypes.DOUBLE,

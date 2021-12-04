@@ -11,11 +11,11 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      models.Purchase.belongsTo(models.Game)
+      models.Purchase.belongsTo(models.User)
     }
   };
   Purchase.init({
-    userId: DataTypes.INTEGER,
-    gameId: DataTypes.INTEGER,
     price: DataTypes.DOUBLE
   }, {
     sequelize,

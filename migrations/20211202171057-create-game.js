@@ -15,7 +15,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       releaseYear: {
-        type: Sequelize.DATE
+        type: Sequelize.INTEGER
       },
       rating: {
         type: Sequelize.DOUBLE

@@ -1,0 +1,2914 @@
+{
+  "Sheet1": [
+    {
+      "Title": "7 Days to Die",
+      "Publisher": "The Fun Pimps Entertainment LLC",
+      "Genre": "Action,Adventure,Indie,"
+    },
+    {
+      "Title": "A Plague Tale: Innocence",
+      "Publisher": "Focus Home Interactive",
+      "Genre": "Action,"
+    },
+    {
+      "Title": "Absolver",
+      "Publisher": "Devolver Digital",
+      "Genre": "Action,Adventure,Indie,"
+    },
+    {
+      "Title": "ACE COMBAT™ 7: SKIES UNKNOWN",
+      "Publisher": "BANDAI NAMCO Studio Inc.",
+      "Genre": "Action,Simulation,"
+    },
+    {
+      "Title": "Age of Wonders III",
+      "Publisher": "Paradox Interactive",
+      "Genre": "Role Playing,Strategy,"
+    },
+    {
+      "Title": "Age of Wonders: Planetfall",
+      "Publisher": "Paradox Interactive",
+      "Genre": "Strategy,"
+    },
+    {
+      "Title": "AI: The Somnium Files",
+      "Publisher": "Spike Chunsoft Co., Ltd.",
+      "Genre": "Adventure,"
+    },
+    {
+      "Title": "Aion™",
+      "Publisher": "NCSOFT",
+      "Genre": "Free To Play,Massively Multiplayer Online,Role Playing,"
+    },
+    {
+      "Title": "Albino Lullaby: Episode 1",
+      "Publisher": "Ape Law",
+      "Genre": "Action,Adventure,Indie,"
+    },
+    {
+      "Title": "Albion Online",
+      "Publisher": "Sandbox Interactive GmbH",
+      "Genre": "Massively Multiplayer Online,Role Playing,"
+    },
+    {
+      "Title": "Amazing Cultivation Simulator / 了不起的修仙模拟器",
+      "Publisher": "Gamera Game",
+      "Genre": "Indie,Role Playing,Simulation,Strategy,"
+    },
+    {
+      "Title": "American Truck Simulator",
+      "Publisher": "SCS Software",
+      "Genre": "Indie,Simulation,"
+    },
+    {
+      "Title": "Ancestors Legacy",
+      "Publisher": "1C Company",
+      "Genre": "Strategy,"
+    },
+    {
+      "Title": "Anno 1800™",
+      "Publisher": "Ubisoft",
+      "Genre": "Strategy,Simulation,"
+    },
+    {
+      "Title": "Anno 1800™",
+      "Publisher": null,
+      "Genre": "Simulation,Strategy,"
+    },
+    {
+      "Title": "Anno 1800™",
+      "Publisher": "Ubisoft",
+      "Genre": "Strategy,Simulation,"
+    },
+    {
+      "Title": "AO International Tennis",
+      "Publisher": "Big Ant Studios",
+      "Genre": "Sports,"
+    },
+    {
+      "Title": "Apex Legends™",
+      "Publisher": "Electronic Arts Inc.",
+      "Genre": "Action,Free To Play,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "Apollo 11 Lunar Landing Demo",
+      "Publisher": "NVIDIA",
+      "Genre": ","
+    },
+    {
+      "Title": "Argo",
+      "Publisher": "Bohemia Interactive",
+      "Genre": "Action,Free To Play,"
+    },
+    {
+      "Title": "ARK: Survival Evolved",
+      "Publisher": "Studio Wildcard",
+      "Genre": "Action,Adventure,Indie,Massively Multiplayer OnlineRole Playing,"
+    },
+    {
+      "Title": "ARK: Survival Of The Fittest",
+      "Publisher": "Studio Wildcard",
+      "Genre": "Action,Adventure,Indie,Massively Multiplayer OnlineRole Playing,Strategy,"
+    },
+    {
+      "Title": "Arma 3",
+      "Publisher": "Bohemia Interactive",
+      "Genre": "Action,First-Person Shooter,Simulation,Strategy,"
+    },
+    {
+      "Title": "Armello",
+      "Publisher": "League of Geeks",
+      "Genre": "Adventure,Indie,Role Playing,Strategy,"
+    },
+    {
+      "Title": "Armored Warfare",
+      "Publisher": "My.com",
+      "Genre": "Simulation,Action,Free To Play,Massively Multiplayer OnlineStrategy,"
+    },
+    {
+      "Title": "Artifact",
+      "Publisher": "Valve",
+      "Genre": "Casual,Strategy,"
+    },
+    {
+      "Title": "Assassin’s Creed® III Remastered",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Assassin’s Creed® IV Black Flag™",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Assassin’s Creed® IV Black Flag™",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Assassin’s Creed® Odyssey",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,Indie,"
+    },
+    {
+      "Title": "Assassin’s Creed® Odyssey",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Assassin’s Creed® Origins",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Assassin’s Creed® Origins",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Assassin’s Creed® Unity",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Assassin’s Creed® Unity",
+      "Publisher": "Ubisoft",
+      "Genre": "Adventure,Action,"
+    },
+    {
+      "Title": "Assassin’s Creed®: Syndicate",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Assassin’s Creed®: Syndicate",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Assetto Corsa",
+      "Publisher": "Kunos Simulazioni",
+      "Genre": "Racing,Simulation,Sports,"
+    },
+    {
+      "Title": "Assetto Corsa Competizione",
+      "Publisher": "505 Games",
+      "Genre": "Racing,Simulation,Sports,"
+    },
+    {
+      "Title": "Asterix & Obelix XXL 3 - The Crystal Menhir",
+      "Publisher": "Microids",
+      "Genre": "Adventure,"
+    },
+    {
+      "Title": "ASTRONEER",
+      "Publisher": "System Era Softworks",
+      "Genre": "Adventure,Indie,"
+    },
+    {
+      "Title": "ATLAS",
+      "Publisher": "Grapeshot Games",
+      "Genre": "Action,Adventure,Massively Multiplayer Online,Role Playing,"
+    },
+    {
+      "Title": "ATOM RPG",
+      "Publisher": "AtomTeam",
+      "Genre": "Role Playing,"
+    },
+    {
+      "Title": "ATOMEGA™",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Indie,"
+    },
+    {
+      "Title": "AVICII Invector",
+      "Publisher": "Wired Productions",
+      "Genre": "Casual,Indie,"
+    },
+    {
+      "Title": "Batman™: Arkham Asylum Game of the Year Edition",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Batman™: Arkham City - Game of the Year Edition",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Batman™: Arkham Knight",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Batman™: Arkham Origins",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Battlefleet Gothic: Armada 2",
+      "Publisher": "Focus Home Interactive",
+      "Genre": "Strategy,"
+    },
+    {
+      "Title": "Battlerite",
+      "Publisher": "Stunlock Studios",
+      "Genre": "Action,"
+    },
+    {
+      "Title": "Battlerite Royale",
+      "Publisher": "Stunlock Studios",
+      "Genre": "Action,Massively Multiplayer Online,Multiplayer Online Battle Arena,"
+    },
+    {
+      "Title": "Battletech",
+      "Publisher": "Paradox Interactive AB",
+      "Genre": "Action,Adventure,Strategy,"
+    },
+    {
+      "Title": "BeamNG.drive",
+      "Publisher": "BeamNG",
+      "Genre": "Simulation,Racing,"
+    },
+    {
+      "Title": "Bear With Me: The Lost Robots",
+      "Publisher": "Modus Games",
+      "Genre": "Adventure,Casual,Indie,"
+    },
+    {
+      "Title": "Besiege",
+      "Publisher": "Spiderling Studios",
+      "Genre": "Indie,Simulation,"
+    },
+    {
+      "Title": "BioShock Infinite",
+      "Publisher": "2K Games",
+      "Genre": "Action,First-Person Shooter,Role Playing,"
+    },
+    {
+      "Title": "BioShock™ 2 Remastered",
+      "Publisher": "2K Games",
+      "Genre": "Action,Role Playing,First-Person Shooter,"
+    },
+    {
+      "Title": "BioShock™ Remastered",
+      "Publisher": "2K Games",
+      "Genre": "Action,First-Person Shooter,Role Playing,"
+    },
+    {
+      "Title": "Black Desert Online",
+      "Publisher": "Kakao Games Europe B.V.",
+      "Genre": "Action,Adventure,Massively Multiplayer Online,Role PlayingSimulation,Strategy,"
+    },
+    {
+      "Title": "Black Future '88",
+      "Publisher": "Good Shepherd Entertainment",
+      "Genre": "Action,Adventure,Indie,"
+    },
+    {
+      "Title": "Black Squad",
+      "Publisher": "Neowiz Games",
+      "Genre": "First-Person Shooter,Action,Free To Play,"
+    },
+    {
+      "Title": "BLACKSAD: Under the Skin",
+      "Publisher": "Microids",
+      "Genre": "Adventure,Casual,Puzzle,"
+    },
+    {
+      "Title": "Blackwake",
+      "Publisher": "Mastfire Studios Pty Ltd",
+      "Genre": "Action,Indie,Strategy,"
+    },
+    {
+      "Title": "Blair Witch",
+      "Publisher": "Bloober Team NA",
+      "Genre": "Adventure,Indie,"
+    },
+    {
+      "Title": "BlazBlue: Cross Tag Battle",
+      "Publisher": "Arc System Works",
+      "Genre": "Action,"
+    },
+    {
+      "Title": "Blizzard® Battle.net®",
+      "Publisher": "Blizzard Entertainment",
+      "Genre": ","
+    },
+    {
+      "Title": "Borderlands 2",
+      "Publisher": "2K Games",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Borderlands 3",
+      "Publisher": "2K",
+      "Genre": "Action,First-Person Shooter,Role Playing,"
+    },
+    {
+      "Title": "Borderlands Game of the Year Enhanced",
+      "Publisher": "2K",
+      "Genre": "Action,Role Playing,"
+    },
+    {
+      "Title": "Borderlands: The Pre-Sequel",
+      "Publisher": "2K Games",
+      "Genre": "Action,Role Playing,"
+    },
+    {
+      "Title": "Brawlhalla",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Free To Play,Indie,Platformer,"
+    },
+    {
+      "Title": "Brothers: A Tale of Two Sons",
+      "Publisher": "505 Games",
+      "Genre": "Adventure,Casual,Puzzle,"
+    },
+    {
+      "Title": "Call of Cthulhu®",
+      "Publisher": "Focus Home Interactive",
+      "Genre": "Adventure,Role Playing,"
+    },
+    {
+      "Title": "Call of Duty: World at War",
+      "Publisher": "Activision",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Call of Duty® 4: Modern Warfare®",
+      "Publisher": "Activision",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Call of Duty®: Black Ops 4",
+      "Publisher": "Activision",
+      "Genre": "Action,First-Person Shooter,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "Call of Duty®: Black Ops III",
+      "Publisher": "Activision",
+      "Genre": "Action,Adventure,First-Person Shooter,"
+    },
+    {
+      "Title": "Call of Duty®: Infinite Warfare",
+      "Publisher": "Activision",
+      "Genre": "Action,Adventure,First-Person Shooter,"
+    },
+    {
+      "Title": "Call of Duty®: Modern Warfare®",
+      "Publisher": "Activision",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Call of Duty®: Modern Warfare® 2 Multiplayer",
+      "Publisher": "Activision",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Call of Duty®: Modern Warfare® 2 Singleplayer",
+      "Publisher": "Activision",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Call of Duty®: Modern Warfare® 3 Multiplayer",
+      "Publisher": "Activision",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Call of Duty®: Modern Warfare® 3 singleplayer",
+      "Publisher": "Activision",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Call of Duty®: WWII",
+      "Publisher": "Activision",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "CardLife: Cardboard Survival",
+      "Publisher": "Freejam",
+      "Genre": "Action,Adventure,Massively Multiplayer Online,IndieRole Playing,"
+    },
+    {
+      "Title": "Catherine Classic",
+      "Publisher": "Sega Europe, Ltd.",
+      "Genre": "Adventure,"
+    },
+    {
+      "Title": "Celeste",
+      "Publisher": "Matt Makes Games Inc.",
+      "Genre": "Action,Adventure,Indie,Platformer,"
+    },
+    {
+      "Title": "Chernobylite",
+      "Publisher": "The Farm 51",
+      "Genre": "Action,Adventure,Indie,Role PlayingSimulation,"
+    },
+    {
+      "Title": "Chivalry: Medieval Warfare",
+      "Publisher": "Torn Banner Studios",
+      "Genre": "Action,Indie,"
+    },
+    {
+      "Title": "Cities: Skylines",
+      "Publisher": "Paradox Interactive",
+      "Genre": "Casual,Simulation,Strategy,"
+    },
+    {
+      "Title": "Claybook",
+      "Publisher": "Second Order",
+      "Genre": "Action,Indie,Platformer,Puzzle,"
+    },
+    {
+      "Title": "Clicker Heroes",
+      "Publisher": "Playsaurus",
+      "Genre": "Adventure,Casual,Free To Play,IndieRole Playing,Simulation,Strategy,"
+    },
+    {
+      "Title": "Clicker Heroes 2",
+      "Publisher": "Playsaurus",
+      "Genre": "Action,Adventure,Arcade,CasualIndie,Role Playing,Simulation,Strategy"
+    },
+    {
+      "Title": "Closers",
+      "Publisher": "Nexon Corporation",
+      "Genre": "Free To Play,Massively Multiplayer Online,Role Playing,"
+    },
+    {
+      "Title": "Commandos 2 - HD Remaster",
+      "Publisher": "Kalypso Media Group GmbH",
+      "Genre": "Strategy,"
+    },
+    {
+      "Title": "Company of Heroes",
+      "Publisher": "SEGA",
+      "Genre": "Action,Strategy,"
+    },
+    {
+      "Title": "Conan Exiles",
+      "Publisher": "Funcom",
+      "Genre": "Action,Adventure,Massively Multiplayer Online,Role PlayingSimulation,Strategy,"
+    },
+    {
+      "Title": "Conception PLUS: Maidens of the Twelve Stars",
+      "Publisher": "Spike Chunsoft Co., Ltd.",
+      "Genre": "Role Playing,"
+    },
+    {
+      "Title": "Construction Simulator 2 US - Pocket Edition",
+      "Publisher": "astragon Entertainment GmbH",
+      "Genre": "Simulation,"
+    },
+    {
+      "Title": "Constructor Plus",
+      "Publisher": "System 3",
+      "Genre": "Indie,Simulation,Strategy,"
+    },
+    {
+      "Title": "Cooking Simulator",
+      "Publisher": "Wastelands Interactive",
+      "Genre": "Casual,Indie,Simulation,"
+    },
+    {
+      "Title": "Counter-Strike",
+      "Publisher": "Valve",
+      "Genre": "First-Person Shooter,Action,"
+    },
+    {
+      "Title": "Counter-Strike: Global Offensive",
+      "Publisher": "Valve Corporation",
+      "Genre": "Action,First-Person Shooter,Free To Play,"
+    },
+    {
+      "Title": "Counter-Strike: Source",
+      "Publisher": "Valve",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Crash Bandicoot™ N. Sane Trilogy",
+      "Publisher": "Activision",
+      "Genre": "Action,Family,Platformer,"
+    },
+    {
+      "Title": "Crossfire",
+      "Publisher": "Tencent",
+      "Genre": "First-Person Shooter,"
+    },
+    {
+      "Title": "Crossout",
+      "Publisher": "Gaijin Entertainment",
+      "Genre": "Action,Massively Multiplayer Online,Racing,Free To Play,"
+    },
+    {
+      "Title": "Crusader Kings II",
+      "Publisher": "Paradox Interactive",
+      "Genre": "Free To Play,Role Playing,Simulation,Strategy,"
+    },
+    {
+      "Title": "Crying Suns",
+      "Publisher": "Humble Bundle",
+      "Genre": "Indie,Strategy,"
+    },
+    {
+      "Title": "Cuisine Royale",
+      "Publisher": "Gaijin Distribution KFT",
+      "Genre": "Action,Free To Play,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "Cultist Simulator",
+      "Publisher": "Humble Bundle",
+      "Genre": "Indie,Role Playing,Simulation,Strategy,"
+    },
+    {
+      "Title": "Cuphead",
+      "Publisher": "StudioMDHR Entertainment Inc.",
+      "Genre": "Action,Arcade,Indie,Platformer,"
+    },
+    {
+      "Title": "Dakar 18",
+      "Publisher": "Bigmoon Entertainment, Deep Silver",
+      "Genre": "Racing,Simulation,"
+    },
+    {
+      "Title": "DARK SOULS™ II",
+      "Publisher": "BANDAI NAMCO Entertainment",
+      "Genre": "Action,Role Playing,"
+    },
+    {
+      "Title": "DARK SOULS™ II: Scholar of the First Sin",
+      "Publisher": "BANDAI NAMCO Entertainment",
+      "Genre": "Action,Role Playing,"
+    },
+    {
+      "Title": "DARK SOULS™ III",
+      "Publisher": "BANDAI NAMCO Entertainment",
+      "Genre": "Action,Role Playing,"
+    },
+    {
+      "Title": "DARK SOULS™: REMASTERED",
+      "Publisher": "BANDAI NAMCO Entertainment America Inc.",
+      "Genre": "Action,Role Playing,"
+    },
+    {
+      "Title": "Darkest Dungeon®",
+      "Publisher": "Red Hook Studios",
+      "Genre": "Indie,Role Playing,Strategy,"
+    },
+    {
+      "Title": "Darksiders II Deathinitive Edition",
+      "Publisher": "THQ Nordic",
+      "Genre": "Action,Adventure,Role Playing,"
+    },
+    {
+      "Title": "Darksiders III",
+      "Publisher": "THQ Nordic",
+      "Genre": "Action,Adventure,Indie,Role Playing,"
+    },
+    {
+      "Title": "DARKSIDERS: GENESIS",
+      "Publisher": "THQ Nordic",
+      "Genre": "Action,Adventure,Role Playing,"
+    },
+    {
+      "Title": "Darwin Project",
+      "Publisher": "Scavengers Studio",
+      "Genre": "Action,Casual,Free To Play,Indie,"
+    },
+    {
+      "Title": "Dauntless",
+      "Publisher": "Phoenix Labs",
+      "Genre": "Action,Free To Play,Massively Multiplayer Online,Role Playing,"
+    },
+    {
+      "Title": "Dawn of Man",
+      "Publisher": "Madruga Works",
+      "Genre": "Indie,Simulation,Strategy,"
+    },
+    {
+      "Title": "DayZ",
+      "Publisher": "Bohemia Interactive",
+      "Genre": "Action,Adventure,First-Person Shooter,Massively Multiplayer OnlineRole Playing,Simulation,"
+    },
+    {
+      "Title": "Dead by Daylight",
+      "Publisher": "Starbreeze Studios",
+      "Genre": "Action,"
+    },
+    {
+      "Title": "Dead Cells",
+      "Publisher": "Motion Twin",
+      "Genre": "Action,Indie,Platformer,"
+    },
+    {
+      "Title": "Dead Frontier 2",
+      "Publisher": "Creaky Corpse Ltd",
+      "Genre": "Action,Free To Play,Indie,Massively Multiplayer OnlineRole Playing,"
+    },
+    {
+      "Title": "Dead In Vinland",
+      "Publisher": "Playdius, Plug In Digital",
+      "Genre": "Adventure,Indie,Role Playing,SimulationStrategy,"
+    },
+    {
+      "Title": "Deceit",
+      "Publisher": "Automaton",
+      "Genre": "Action,Free To Play,Indie,"
+    },
+    {
+      "Title": "Deep Rock Galactic",
+      "Publisher": "Coffee Stain Publishing",
+      "Genre": "Action,Indie,"
+    },
+    {
+      "Title": "Deep Sky Derelicts",
+      "Publisher": "1C Entertainment",
+      "Genre": "Indie,Role Playing,Strategy,"
+    },
+    {
+      "Title": "Deliver Us The Moon: Fortuna",
+      "Publisher": "Wired Productions",
+      "Genre": "Action,Adventure,Indie,PuzzleSimulation,"
+    },
+    {
+      "Title": "Depth",
+      "Publisher": "Digital Confectioners",
+      "Genre": "Action,Indie,"
+    },
+    {
+      "Title": "Descenders",
+      "Publisher": "No More Robots",
+      "Genre": "Action,Racing,Sports,"
+    },
+    {
+      "Title": "DESOLATE",
+      "Publisher": "HypeTrain Digital",
+      "Genre": "Action,Adventure,Role Playing,"
+    },
+    {
+      "Title": "Destiny 2",
+      "Publisher": "Bungie",
+      "Genre": "Action,Adventure,First-Person Shooter,Free To PlayMassively Multiplayer Online,Role Playing,"
+    },
+    {
+      "Title": "Diablo III",
+      "Publisher": "Blizzard Entertainment",
+      "Genre": "Action,Role Playing,"
+    },
+    {
+      "Title": "Diesel Brothers: Truck Building Simulator",
+      "Publisher": "Code Horizon, PlayWay S.A.",
+      "Genre": "Casual,Racing,Simulation,"
+    },
+    {
+      "Title": "DiRT 3 Complete Edition",
+      "Publisher": "Codemasters",
+      "Genre": "Racing,Simulation,Sports,"
+    },
+    {
+      "Title": "DiRT 4",
+      "Publisher": "Codemasters",
+      "Genre": "Racing,Simulation,Sports,"
+    },
+    {
+      "Title": "DiRT Rally 2.0",
+      "Publisher": "Codemasters",
+      "Genre": "Racing,Simulation,Sports,"
+    },
+    {
+      "Title": "Dirty Bomb®",
+      "Publisher": "Nexon America Inc.",
+      "Genre": "Action,Free To Play,First-Person Shooter,"
+    },
+    {
+      "Title": "Disco Elysium",
+      "Publisher": "ZA/UM",
+      "Genre": "Adventure,Indie,Role Playing,"
+    },
+    {
+      "Title": "Dishonored",
+      "Publisher": "Bethesda Softworks",
+      "Genre": "Action,Adventure,First-Person Shooter,"
+    },
+    {
+      "Title": "Dishonored 2",
+      "Publisher": "Bethesda Softworks",
+      "Genre": "Action,First-Person Shooter,Role Playing,"
+    },
+    {
+      "Title": "Dishonored®: Death of the Outsider™",
+      "Publisher": "Bethesda Softworks",
+      "Genre": "Action,"
+    },
+    {
+      "Title": "Distance",
+      "Publisher": "Refract",
+      "Genre": "Action,Racing,Indie,"
+    },
+    {
+      "Title": "Divinity: Original Sin 2",
+      "Publisher": "Larian Studios",
+      "Genre": "Adventure,Role Playing,Strategy,"
+    },
+    {
+      "Title": "Don't Starve",
+      "Publisher": "Klei Entertainment",
+      "Genre": "Adventure,Indie,Simulation,"
+    },
+    {
+      "Title": "Don't Starve Together",
+      "Publisher": "Klei Entertainment",
+      "Genre": "Adventure,Indie,Simulation,"
+    },
+    {
+      "Title": "Donut County",
+      "Publisher": "Annapurna Interactive",
+      "Genre": "Adventure,Casual,Indie,Puzzle,"
+    },
+    {
+      "Title": "DOOM®",
+      "Publisher": "Bethesda Softworks",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Dota 2",
+      "Publisher": "Valve",
+      "Genre": "Action,Free To Play,Multiplayer Online Battle Arena,Strategy,"
+    },
+    {
+      "Title": "Dota Underlords",
+      "Publisher": "Valve",
+      "Genre": "Free To Play,Strategy,"
+    },
+    {
+      "Title": "Double Turn",
+      "Publisher": "Inwave Labs",
+      "Genre": "Action,Indie,"
+    },
+    {
+      "Title": "Dragon Nest",
+      "Publisher": "Eyedentity Games Inc.",
+      "Genre": "Action,Free To Play,Massively Multiplayer Online,Role Playing,"
+    },
+    {
+      "Title": "Dungreed",
+      "Publisher": "TEAM HORAY",
+      "Genre": "Action,Indie,"
+    },
+    {
+      "Title": "DUSK",
+      "Publisher": "New Blood Interactive",
+      "Genre": "Action,Indie,"
+    },
+    {
+      "Title": "Dying Light",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Dying Light: Bad Blood",
+      "Publisher": "Techland Sp. z o.o.",
+      "Genre": "Action,Massively Multiplayer Online,Role Playing,"
+    },
+    {
+      "Title": "EARTH DEFENSE FORCE 5",
+      "Publisher": "D3 PUBLISHER",
+      "Genre": "Action,"
+    },
+    {
+      "Title": "Edge Of Eternity",
+      "Publisher": "Playdius Entertainment",
+      "Genre": "Indie,Role Playing,Strategy,"
+    },
+    {
+      "Title": "ELEX",
+      "Publisher": "THQ Nordic",
+      "Genre": "Action,Adventure,Role Playing,"
+    },
+    {
+      "Title": "Elite Dangerous",
+      "Publisher": "Frontier Developments",
+      "Genre": "Action,Adventure,Massively Multiplayer Online,Role PlayingSimulation,Strategy,"
+    },
+    {
+      "Title": "Empyrion - Galactic Survival",
+      "Publisher": "Eleon Game Studios",
+      "Genre": "Adventure,Indie,Simulation,Strategy,"
+    },
+    {
+      "Title": "Endless Space® 2",
+      "Publisher": "SEGA",
+      "Genre": "Strategy,"
+    },
+    {
+      "Title": "Enter the Gungeon",
+      "Publisher": "Devolver Digital",
+      "Genre": "Action,Adventure,Indie,"
+    },
+    {
+      "Title": "Euro Truck Simulator 2",
+      "Publisher": "SCS Software",
+      "Genre": "Casual,Racing,Simulation,"
+    },
+    {
+      "Title": "Europa Universalis IV",
+      "Publisher": "Paradox Interactive",
+      "Genre": "Simulation,Strategy,"
+    },
+    {
+      "Title": "EVE Online",
+      "Publisher": "CCP",
+      "Genre": "Action,Free To Play,Massively Multiplayer Online,Role PlayingStrategy,"
+    },
+    {
+      "Title": "Everreach: Project Eden",
+      "Publisher": "Headup",
+      "Genre": "Action,First-Person Shooter,Indie,Role Playing,"
+    },
+    {
+      "Title": "EVERSPACE™",
+      "Publisher": "ROCKFISH Games",
+      "Genre": "Action,Indie,"
+    },
+    {
+      "Title": "EXAPUNKS",
+      "Publisher": "Zachtronics",
+      "Genre": "Indie,Puzzle,Simulation,"
+    },
+    {
+      "Title": "F1® 2018",
+      "Publisher": "Codemasters",
+      "Genre": "Simulation,Racing,"
+    },
+    {
+      "Title": "F1® 2019 Anniversary Edition",
+      "Publisher": "Codemasters",
+      "Genre": "Racing,Simulation,Sports,"
+    },
+    {
+      "Title": "F1™ 2017",
+      "Publisher": "Codemasters",
+      "Genre": "Simulation,Racing,"
+    },
+    {
+      "Title": "Factorio",
+      "Publisher": "Wube Software",
+      "Genre": "Action,"
+    },
+    {
+      "Title": "Fade to Silence",
+      "Publisher": "THQ Nordic GmbH",
+      "Genre": "Role Playing,"
+    },
+    {
+      "Title": "Fallout 3: Game of the Year Edition",
+      "Publisher": "Bethesda Softworks",
+      "Genre": "First-Person Shooter,Role Playing,"
+    },
+    {
+      "Title": "Fallout 76",
+      "Publisher": "Bethesda Softworks LLC",
+      "Genre": "Role Playing,"
+    },
+    {
+      "Title": "Fallout: New Vegas",
+      "Publisher": "Bethesda Softworks",
+      "Genre": "Action,Role Playing,"
+    },
+    {
+      "Title": "Far Cry® 4",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,First-Person Shooter,"
+    },
+    {
+      "Title": "Far Cry® 4",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,First-Person Shooter,"
+    },
+    {
+      "Title": "Far Cry® 5",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,First-Person Shooter,"
+    },
+    {
+      "Title": "Far Cry® 5",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,First-Person Shooter,"
+    },
+    {
+      "Title": "Far Cry® New Dawn",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,First-Person Shooter,"
+    },
+    {
+      "Title": "Far Cry® New Dawn",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,First-Person Shooter,"
+    },
+    {
+      "Title": "Far Cry® Primal",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,First-Person Shooter,"
+    },
+    {
+      "Title": "Far Cry® Primal",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,First-Person Shooter,"
+    },
+    {
+      "Title": "FAR: Lone Sails",
+      "Publisher": "Mixtvision Digital",
+      "Genre": "Indie,Adventure,Action,"
+    },
+    {
+      "Title": "Farm Together",
+      "Publisher": "Milkstone Studios",
+      "Genre": "Casual,Indie,Simulation,"
+    },
+    {
+      "Title": "Farming Simulator 17",
+      "Publisher": "Focus Home Interactive",
+      "Genre": "Simulation,"
+    },
+    {
+      "Title": "Farming Simulator 19",
+      "Publisher": "Focus Home Interactive",
+      "Genre": "Casual,Simulation,"
+    },
+    {
+      "Title": "Fear The Wolves",
+      "Publisher": "Focus Home Interactive",
+      "Genre": "Action,First-Person Shooter,Adventure,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "FIA European Truck Racing Championship",
+      "Publisher": "Bigben Interactive",
+      "Genre": "Racing,Simulation,Sports,"
+    },
+    {
+      "Title": "Fimbul",
+      "Publisher": "Wild River Games",
+      "Genre": "Action,Adventure,Indie,"
+    },
+    {
+      "Title": "Firewatch",
+      "Publisher": "Panic",
+      "Genre": "Adventure,Indie,"
+    },
+    {
+      "Title": "Five Nights at Freddy's",
+      "Publisher": "Scott Cawthon",
+      "Genre": "Indie,Simulation,Action,Strategy,"
+    },
+    {
+      "Title": "Five Nights at Freddy's 2",
+      "Publisher": "Scott Cawthon",
+      "Genre": "Indie,Simulation,Action,Strategy,"
+    },
+    {
+      "Title": "Football Manager 2018",
+      "Publisher": "SEGA",
+      "Genre": "Simulation,Sports,"
+    },
+    {
+      "Title": "Football Manager 2019",
+      "Publisher": "SEGA",
+      "Genre": "Sports,Simulation,"
+    },
+    {
+      "Title": "Football Manager Touch 2018",
+      "Publisher": "SEGA",
+      "Genre": "Simulation,Sports,"
+    },
+    {
+      "Title": "For Honor™",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "For Honor™",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Forager",
+      "Publisher": "Humble Bundle",
+      "Genre": "Action,Adventure,Casual,IndieSimulation,"
+    },
+    {
+      "Title": "Forged Battalion",
+      "Publisher": "Team17 Digital Ltd",
+      "Genre": "Indie,Simulation,Strategy,"
+    },
+    {
+      "Title": "Fortnite",
+      "Publisher": "Epic Games, Inc.",
+      "Genre": "Action,Free To Play,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "Foundation",
+      "Publisher": "Polymorph Games",
+      "Genre": "Indie,Simulation,Strategy,"
+    },
+    {
+      "Title": "Fractured Lands",
+      "Publisher": "Unbroken Studios",
+      "Genre": "Racing,First-Person Shooter,Action,"
+    },
+    {
+      "Title": "Friday the 13th: The Game",
+      "Publisher": "Gun Media",
+      "Genre": "Action,"
+    },
+    {
+      "Title": "FrostPunk",
+      "Publisher": "11 bit studios",
+      "Genre": "Simulation,Strategy,"
+    },
+    {
+      "Title": "FrostRunner",
+      "Publisher": "SMU Guildhall",
+      "Genre": "Action,Free To Play,Indie,Platformer,"
+    },
+    {
+      "Title": "FTL: Faster Than Light",
+      "Publisher": "Subset Games",
+      "Genre": "Casual,Indie,Simulation,Strategy,"
+    },
+    {
+      "Title": "Garry's Mod",
+      "Publisher": "Valve",
+      "Genre": "Indie,Simulation,"
+    },
+    {
+      "Title": "Generation Zero",
+      "Publisher": "Avalanche Studios Stockholm",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Gloomhaven",
+      "Publisher": "Asmodee Digital",
+      "Genre": "Adventure,Role Playing,Strategy,"
+    },
+    {
+      "Title": "Golf With Your Friends",
+      "Publisher": "Blacklight Interactive",
+      "Genre": "Casual,Indie,Sports,"
+    },
+    {
+      "Title": "Gravel",
+      "Publisher": "Milestone S.r.l.",
+      "Genre": "Racing,Sports,"
+    },
+    {
+      "Title": "GreedFall",
+      "Publisher": "Focus Home Interactive",
+      "Genre": "Action,Role Playing,"
+    },
+    {
+      "Title": "Green Hell",
+      "Publisher": "Creepy Jar",
+      "Genre": "Indie,Simulation,"
+    },
+    {
+      "Title": "Grim Dawn",
+      "Publisher": "Crate Entertainment",
+      "Genre": "Role Playing,Action,Adventure,Indie,"
+    },
+    {
+      "Title": "GRIP: Combat Racing",
+      "Publisher": "Wired Productions",
+      "Genre": "Action,Indie,Racing,"
+    },
+    {
+      "Title": "GTFO",
+      "Publisher": "10 Chambers Collective",
+      "Genre": "Action,First-Person Shooter,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "Guacamelee! 2",
+      "Publisher": "Drinkbox Studios",
+      "Genre": "Action,Adventure,Indie,Platformer,"
+    },
+    {
+      "Title": "Guild Wars 2",
+      "Publisher": "NCSOFT",
+      "Genre": "Massively Multiplayer Online,Role Playing,"
+    },
+    {
+      "Title": "GUILTY GEAR Xrd -REVELATOR-",
+      "Publisher": "Arc System Works",
+      "Genre": "Action,"
+    },
+    {
+      "Title": "Hacknet",
+      "Publisher": "Surprise Attack",
+      "Genre": "Indie,Simulation,Puzzle,"
+    },
+    {
+      "Title": "Half-Life®",
+      "Publisher": "Valve",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Half-Life® 2",
+      "Publisher": "Valve",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Hearthstone: Heroes of Warcraft",
+      "Publisher": "Blizzard Entertainment",
+      "Genre": "Strategy,"
+    },
+    {
+      "Title": "Hearts of Iron IV",
+      "Publisher": "Paradox Interactive",
+      "Genre": "Simulation,Strategy,"
+    },
+    {
+      "Title": "Hell Let Loose",
+      "Publisher": "Team17 Digital Ltd",
+      "Genre": "Action,Casual,Indie,SimulationStrategy,"
+    },
+    {
+      "Title": "Hellblade: Senua's Sacrifice",
+      "Publisher": "Ninja Theory",
+      "Genre": "Action,Adventure,Indie,"
+    },
+    {
+      "Title": "Heroes of Newerth",
+      "Publisher": "Frostburn Studios",
+      "Genre": "Free To Play,Multiplayer Online Battle Arena,"
+    },
+    {
+      "Title": "Heroes of the Storm",
+      "Publisher": "Blizzard Entertainment",
+      "Genre": "Action,Multiplayer Online Battle Arena,"
+    },
+    {
+      "Title": "HITMAN™",
+      "Publisher": "IO Interactive A/S",
+      "Genre": "Action,"
+    },
+    {
+      "Title": "HITMAN™2",
+      "Publisher": "Warner Bros Interactive Entertainment",
+      "Genre": "Action,"
+    },
+    {
+      "Title": "Hobo: Tough Life",
+      "Publisher": "Perun Creative",
+      "Genre": "Adventure,Indie,Role Playing,Simulation,"
+    },
+    {
+      "Title": "Holdfast: Nations At War",
+      "Publisher": "Anvil Game Studios",
+      "Genre": "Action,Massively Multiplayer Online,Indie,"
+    },
+    {
+      "Title": "Hollow Knight",
+      "Publisher": "Team Cherry",
+      "Genre": "Action,Adventure,Indie,Platformer,"
+    },
+    {
+      "Title": "Homefront®: The Revolution",
+      "Publisher": "Deep Silver",
+      "Genre": "Action,Adventure,First-Person Shooter,"
+    },
+    {
+      "Title": "Hot Lava",
+      "Publisher": "Klei Entertainment",
+      "Genre": "Action,Adventure,Indie,PlatformerRacing,"
+    },
+    {
+      "Title": "House Flipper",
+      "Publisher": "PlayWay S.A., Frozen District",
+      "Genre": "Casual,Family,Indie,Simulation,"
+    },
+    {
+      "Title": "Human: Fall Flat",
+      "Publisher": "Curve Digital",
+      "Genre": "Adventure,Indie,Puzzle,"
+    },
+    {
+      "Title": "Hunt: Showdown",
+      "Publisher": "Crytek",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "I’m not a Monster",
+      "Publisher": "Alawar Premium",
+      "Genre": "Indie,Massively Multiplayer Online,Role Playing,Strategy,"
+    },
+    {
+      "Title": "Ice Age: Scrat's Nutty Adventure",
+      "Publisher": "Outright Games Ltd",
+      "Genre": "Adventure,Family,"
+    },
+    {
+      "Title": "Idle Champions of the Forgotten Realms",
+      "Publisher": "Codename Entertainment Inc.",
+      "Genre": "Action,Adventure,Casual,Free To PlayIndie,Strategy,"
+    },
+    {
+      "Title": "Immortal: Unchained",
+      "Publisher": "Game Odyssey Limited",
+      "Genre": "Action,Adventure,Role Playing,"
+    },
+    {
+      "Title": "Imperator: Rome",
+      "Publisher": "Paradox Interactive",
+      "Genre": "Casual,Simulation,Strategy,"
+    },
+    {
+      "Title": "Infliction",
+      "Publisher": "Caustic Reality",
+      "Genre": "Adventure,Indie,"
+    },
+    {
+      "Title": "Injustice™ 2",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,"
+    },
+    {
+      "Title": "INSOMNIA: The Ark",
+      "Publisher": "HeroCraft",
+      "Genre": "Action,Role Playing,Indie,"
+    },
+    {
+      "Title": "Insurgency",
+      "Publisher": "New World Interactive",
+      "Genre": "Action,Indie,Strategy,"
+    },
+    {
+      "Title": "Insurgency: Sandstorm",
+      "Publisher": "Focus Home Interactive",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Into the Breach",
+      "Publisher": "Subset Games",
+      "Genre": "Indie,Role Playing,Simulation,Strategy,"
+    },
+    {
+      "Title": "Islands of Nyne: Battle Royale",
+      "Publisher": "Define Human Studios",
+      "Genre": "First-Person Shooter,Action,Indie,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "Jurassic World Evolution™",
+      "Publisher": "Frontier Developments Ltd.",
+      "Genre": "Simulation,Strategy,"
+    },
+    {
+      "Title": "Kenshi",
+      "Publisher": "Lo-Fi Games",
+      "Genre": "Role Playing,Simulation,Strategy,ActionIndie,"
+    },
+    {
+      "Title": "Kerbal Space Program",
+      "Publisher": "Squad",
+      "Genre": "Indie,Simulation,"
+    },
+    {
+      "Title": "Killing Floor 2",
+      "Publisher": "Tripwire Interactive",
+      "Genre": "Action,"
+    },
+    {
+      "Title": "Kingdom Come: Deliverance",
+      "Publisher": "Deep Silver",
+      "Genre": "Adventure,Action,Role Playing,"
+    },
+    {
+      "Title": "Kingdom Rush Origins",
+      "Publisher": "Ironhide Game Studio",
+      "Genre": "Indie,Strategy,"
+    },
+    {
+      "Title": "Kingdom Two Crowns",
+      "Publisher": "Raw Fury",
+      "Genre": "Adventure,Indie,Simulation,Strategy,"
+    },
+    {
+      "Title": "KurtzPel",
+      "Publisher": "KOG",
+      "Genre": "Action,Free To Play,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "Last Tide",
+      "Publisher": "Digital Confectioners",
+      "Genre": "Action,Indie,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "League of Legends",
+      "Publisher": "Riot Games",
+      "Genre": "Action,Free To Play,Multiplayer Online Battle Arena,"
+    },
+    {
+      "Title": "Left 4 Dead 2",
+      "Publisher": "Valve",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "LEGO® Batman 2 DC Super Heroes™",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,Family,Adventure,"
+    },
+    {
+      "Title": "LEGO® Batman: The Videogame",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,Adventure,Family,"
+    },
+    {
+      "Title": "LEGO® Batman™ 3: Beyond Gotham",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,Adventure,Family,"
+    },
+    {
+      "Title": "LEGO® DC Super-Villains",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,Adventure,Family,"
+    },
+    {
+      "Title": "LEGO® Harry Potter: Years 1-4",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,Family,"
+    },
+    {
+      "Title": "LEGO® Jurassic World",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,Family,Adventure,"
+    },
+    {
+      "Title": "LEGO® Marvel Super Heroes 2",
+      "Publisher": "Warner Bros. Interactive",
+      "Genre": "Action,Adventure,Family,"
+    },
+    {
+      "Title": "LEGO® MARVEL's Avengers",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,Adventure,Family,"
+    },
+    {
+      "Title": "LEGO® Marvel™ Super Heroes",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,Adventure,Family,"
+    },
+    {
+      "Title": "LEGO® The Incredibles",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Family,Action,Adventure,"
+    },
+    {
+      "Title": "LEGO® Worlds",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Adventure,Casual,Family,"
+    },
+    {
+      "Title": "Leisure Suit Larry - Wet Dreams Don't Dry",
+      "Publisher": "Assemble Entertainment",
+      "Genre": "Adventure,"
+    },
+    {
+      "Title": "Lethal League Blaze",
+      "Publisher": "Team Reptile",
+      "Genre": "Action,Indie,Sports,"
+    },
+    {
+      "Title": "Lineage® II",
+      "Publisher": "NCSOFT",
+      "Genre": "Free To Play,Massively Multiplayer Online,Role Playing,"
+    },
+    {
+      "Title": "Little Big Workshop",
+      "Publisher": "HandyGames, THQ Nordic",
+      "Genre": "Simulation,Strategy,"
+    },
+    {
+      "Title": "Lonely Mountains: Downhill",
+      "Publisher": "Megagon industries",
+      "Genre": "Action,Indie,Racing,SimulationSports,"
+    },
+    {
+      "Title": "Mad Max",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Mafia III",
+      "Publisher": "2K Games",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Magic the Gathering: Arena",
+      "Publisher": "Hasbro, Inc.",
+      "Genre": "Puzzle,Strategy,"
+    },
+    {
+      "Title": "Mechwarrior 5: Mercenaries",
+      "Publisher": "Piranha Games Inc.",
+      "Genre": "Action,Massively Multiplayer Online,Simulation,"
+    },
+    {
+      "Title": "MEG 9: Lost Echoes",
+      "Publisher": "Skunkwerks Kinetic",
+      "Genre": "Action,Indie,Strategy,"
+    },
+    {
+      "Title": "Men of War: Assault Squad 2",
+      "Publisher": "1C Company",
+      "Genre": "Action,Simulation,Strategy,"
+    },
+    {
+      "Title": "Metro 2033 Redux",
+      "Publisher": "Deep Silver",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Metro Exodus",
+      "Publisher": "Deep Silver",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Metro Exodus",
+      "Publisher": "Deep Silver",
+      "Genre": "First-Person Shooter,Action,"
+    },
+    {
+      "Title": "Metro: Last Light Redux",
+      "Publisher": "Deep Silver",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Middle-earth™: Shadow of Mordor™",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,Role Playing,"
+    },
+    {
+      "Title": "Middle-earth™: Shadow of War™",
+      "Publisher": "WB Games",
+      "Genre": "Action,Adventure,Role Playing,"
+    },
+    {
+      "Title": "Minecraft: Java Version",
+      "Publisher": "Microsoft Studios",
+      "Genre": "Action,Adventure,Family,"
+    },
+    {
+      "Title": "Minion Masters",
+      "Publisher": "BetaDwarf",
+      "Genre": "Action,Free To Play,Indie,Massively Multiplayer OnlineStrategy,"
+    },
+    {
+      "Title": "Miracle snack shop",
+      "Publisher": "TALESSHOP Co., Ltd.",
+      "Genre": "Casual,Indie,Simulation,"
+    },
+    {
+      "Title": "Monster Energy Supercross - The Official Videogame 2",
+      "Publisher": "Milestone S.r.l.",
+      "Genre": "Racing,Simulation,Sports,"
+    },
+    {
+      "Title": "Monster Energy Supercross - The Official Videogame 3",
+      "Publisher": "Milestone S.r.l.",
+      "Genre": "Racing,Simulation,Sports,"
+    },
+    {
+      "Title": "Moonlighter",
+      "Publisher": "11 bit studios",
+      "Genre": "Action,Adventure,Indie,"
+    },
+    {
+      "Title": "Moons of Madness™",
+      "Publisher": "Funcom",
+      "Genre": "Adventure,Casual,Indie,"
+    },
+    {
+      "Title": "MORDHAU",
+      "Publisher": "Triternion",
+      "Genre": "Action,Indie,"
+    },
+    {
+      "Title": "Mortal Kombat 11",
+      "Publisher": "Warner Bros Interactive Entertainment",
+      "Genre": "Action,"
+    },
+    {
+      "Title": "Mortal Kombat X",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,Arcade,"
+    },
+    {
+      "Title": "Mosaic",
+      "Publisher": "Raw Fury Games",
+      "Genre": "Adventure,Indie,"
+    },
+    {
+      "Title": "MOTHERGUNSHIP",
+      "Publisher": "Grip Digital",
+      "Genre": "Action,Indie,First-Person Shooter,"
+    },
+    {
+      "Title": "MotoGP™19",
+      "Publisher": "Milestone S.r.l.",
+      "Genre": "Racing,Sports,"
+    },
+    {
+      "Title": "Mount & Blade",
+      "Publisher": "TaleWorlds Entertainment",
+      "Genre": "Indie,Role Playing,"
+    },
+    {
+      "Title": "Mount & Blade: Warband",
+      "Publisher": "TaleWorlds Entertainment",
+      "Genre": "Action,Role Playing,"
+    },
+    {
+      "Title": "MUSYNX",
+      "Publisher": "Zodiac Interactive",
+      "Genre": "Indie,Simulation,"
+    },
+    {
+      "Title": "Mutant Year Zero: Road to Eden",
+      "Publisher": "Funcom",
+      "Genre": "Adventure,Role Playing,Strategy,"
+    },
+    {
+      "Title": "MXGP 2019 - The Official Motocross Videogame",
+      "Publisher": "Milestone S.r.l.",
+      "Genre": "Racing,Simulation,Sports,"
+    },
+    {
+      "Title": "My Memory of Us",
+      "Publisher": "IMGN.PRO",
+      "Genre": "Action,Adventure,Casual,Indie,"
+    },
+    {
+      "Title": "My Time at Portia",
+      "Publisher": "Team17 Digital Ltd",
+      "Genre": "Adventure,Casual,Family,IndieRole Playing,Simulation,"
+    },
+    {
+      "Title": "Myst III: Exile",
+      "Publisher": "Cyan Worlds Inc.",
+      "Genre": "Adventure,Casual,Puzzle,"
+    },
+    {
+      "Title": "Myst IV: Revelation",
+      "Publisher": "Cyan Worlds Inc.",
+      "Genre": "Adventure,Casual,Puzzle,"
+    },
+    {
+      "Title": "Myst V: End of Ages",
+      "Publisher": "Cyan Worlds Inc.",
+      "Genre": "Adventure,Casual,Puzzle,"
+    },
+    {
+      "Title": "Myst® Masterpiece Edition",
+      "Publisher": "Cyan Worlds Inc.",
+      "Genre": "Adventure,Casual,Puzzle,"
+    },
+    {
+      "Title": "Narcosis",
+      "Publisher": "Honor Code, Inc.",
+      "Genre": "Adventure,Indie,"
+    },
+    {
+      "Title": "NASCAR Heat 3",
+      "Publisher": "704 Games Company",
+      "Genre": "Sports,Racing,"
+    },
+    {
+      "Title": "NBA 2K Playgrounds 2",
+      "Publisher": "2K",
+      "Genre": "Sports,Arcade,"
+    },
+    {
+      "Title": "NBA 2K17",
+      "Publisher": "2K",
+      "Genre": "Sports,Simulation,"
+    },
+    {
+      "Title": "NBA 2K18",
+      "Publisher": "2K",
+      "Genre": "Simulation,Sports,"
+    },
+    {
+      "Title": "NBA 2K19",
+      "Publisher": "2K",
+      "Genre": "Sports,Simulation,"
+    },
+    {
+      "Title": "Nex Machina",
+      "Publisher": "Housemarque",
+      "Genre": "Action,Indie,"
+    },
+    {
+      "Title": "Next Day: Survival",
+      "Publisher": "Last Level",
+      "Genre": "Action,Indie,Role Playing,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "No Man's Sky",
+      "Publisher": "Hello Games",
+      "Genre": "Adventure,Action,"
+    },
+    {
+      "Title": "Orwell: Keeping an Eye On You",
+      "Publisher": "Fellow Traveller",
+      "Genre": "Adventure,Indie,Simulation,"
+    },
+    {
+      "Title": "Out of the Park Baseball 19",
+      "Publisher": "Out of the Park Developments",
+      "Genre": "Sports,Indie,Simulation,Strategy,"
+    },
+    {
+      "Title": "Outlast",
+      "Publisher": "Red Barrels",
+      "Genre": "Action,Indie,Adventure,"
+    },
+    {
+      "Title": "Outward",
+      "Publisher": "Deep Silver",
+      "Genre": "Action,Role Playing,"
+    },
+    {
+      "Title": "Overcooked 2",
+      "Publisher": "Team17 Digital Ltd",
+      "Genre": "Action,Casual,Indie,"
+    },
+    {
+      "Title": "OVERKILL's The Walking Dead",
+      "Publisher": "OVERKILL - A Starbreeze Studio",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Overland",
+      "Publisher": "Finji",
+      "Genre": "Strategy,"
+    },
+    {
+      "Title": "Overwatch",
+      "Publisher": "Blizzard Entertainment",
+      "Genre": "First-Person Shooter,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "Owlboy",
+      "Publisher": "D-Pad Studio",
+      "Genre": "Action,Adventure,Indie,"
+    },
+    {
+      "Title": "Oxygen Not Included",
+      "Publisher": "Klei Entertainment",
+      "Genre": "Indie,Simulation,"
+    },
+    {
+      "Title": "Paladins®",
+      "Publisher": "Hi-Rez Studios, Inc.",
+      "Genre": "Action,Free To Play,"
+    },
+    {
+      "Title": "Papers, Please",
+      "Publisher": 3909,
+      "Genre": "Adventure,Casual,Indie,PuzzleSimulation,"
+    },
+    {
+      "Title": "Parkitect",
+      "Publisher": "Texel Raptor",
+      "Genre": "Indie,Simulation,"
+    },
+    {
+      "Title": "Past Cure",
+      "Publisher": "Phantom 8",
+      "Genre": "Action,Indie,"
+    },
+    {
+      "Title": "Path of Exile",
+      "Publisher": "Grinding Gear Games",
+      "Genre": "Adventure,Free To Play,Massively Multiplayer Online,Role Playing,"
+    },
+    {
+      "Title": "Pathfinder: Kingmaker® - Enhanced Edition",
+      "Publisher": "Deep Silver",
+      "Genre": "Role Playing,Adventure,"
+    },
+    {
+      "Title": "Pax Nova",
+      "Publisher": "Iceberg Interactive",
+      "Genre": "Indie,Strategy,"
+    },
+    {
+      "Title": "PAYDAY 2: Ultimate Edition",
+      "Publisher": "Starbreeze Publishing AB, 505 Games",
+      "Genre": "Action,First-Person Shooter,Role Playing,"
+    },
+    {
+      "Title": "PC Building Simulator",
+      "Publisher": "The Irregular Corporation",
+      "Genre": "Simulation,Indie,"
+    },
+    {
+      "Title": "Phantom Doctrine",
+      "Publisher": "Good Shepherd Entertainment",
+      "Genre": "Action,Role Playing,Strategy,Indie,"
+    },
+    {
+      "Title": "Pillars of Eternity",
+      "Publisher": "Paradox Interactive",
+      "Genre": "Role Playing,"
+    },
+    {
+      "Title": "Pillars of Eternity II: Deadfire",
+      "Publisher": "Obsidian Entertainment",
+      "Genre": "Role Playing,"
+    },
+    {
+      "Title": "PixARK",
+      "Publisher": "Snail Game",
+      "Genre": "Action,Adventure,Casual,IndieMassively Multiplayer Online,Role Playing,Strategy,"
+    },
+    {
+      "Title": "Plane Mechanic Simulator",
+      "Publisher": "Movie Games S.A., PlayWay S.A.",
+      "Genre": "Casual,Indie,Simulation,"
+    },
+    {
+      "Title": "PLANET ALPHA",
+      "Publisher": "Team17 Digital Ltd",
+      "Genre": "Action,Adventure,Indie,Platformer,"
+    },
+    {
+      "Title": "Planet Coaster®",
+      "Publisher": "Frontier Developments",
+      "Genre": "Simulation,Strategy,"
+    },
+    {
+      "Title": "Planet Zoo",
+      "Publisher": "Frontier Developments",
+      "Genre": "Simulation,Strategy,"
+    },
+    {
+      "Title": "PlanetSide 2",
+      "Publisher": "Daybreak Game Company",
+      "Genre": "Action,First-Person Shooter,Free To Play,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "Planetside Arena",
+      "Publisher": "Daybreak Game Company",
+      "Genre": "Action,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "PLAYERUNKNOWN'S BATTLEGROUNDS",
+      "Publisher": "PUBG Corporation",
+      "Genre": "Action,Adventure,First-Person Shooter,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "PLAYERUNKNOWN'S BATTLEGROUNDS Test Server",
+      "Publisher": "PUBG Corporation",
+      "Genre": "Action,Adventure,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "Portal 2",
+      "Publisher": "Valve",
+      "Genre": "Action,Adventure,First-Person Shooter,Puzzle,"
+    },
+    {
+      "Title": "Portal™",
+      "Publisher": "Valve",
+      "Genre": "Action,"
+    },
+    {
+      "Title": "Post Scriptum",
+      "Publisher": "Offworld Industries",
+      "Genre": "Action,Indie,Massively Multiplayer Online,SimulationStrategy,"
+    },
+    {
+      "Title": "Praetorians - HD Remaster",
+      "Publisher": "Kalypso Media Group",
+      "Genre": "Strategy,"
+    },
+    {
+      "Title": "Praey for the Gods",
+      "Publisher": "No Matter Studios",
+      "Genre": "Action,Adventure,Indie,Role PlayingSimulation,"
+    },
+    {
+      "Title": "Prey®",
+      "Publisher": "Bethesda Softworks",
+      "Genre": "Action,Adventure,First-Person Shooter,"
+    },
+    {
+      "Title": "Project CARS",
+      "Publisher": "Slightly Mad Studios",
+      "Genre": "Casual,Racing,Simulation,Sports,"
+    },
+    {
+      "Title": "Project CARS 2",
+      "Publisher": "BANDAI NAMCO Entertainment",
+      "Genre": "Simulation,Racing,"
+    },
+    {
+      "Title": "Project Winter",
+      "Publisher": "Other Ocean",
+      "Genre": "Action,Adventure,Casual,IndieStrategy,"
+    },
+    {
+      "Title": "PUBG: Closed Experimental Server",
+      "Publisher": "PUBG Corporation",
+      "Genre": "Action,Adventure,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "Pummel Party",
+      "Publisher": "Rebuilt Games",
+      "Genre": "Action,Casual,Indie,"
+    },
+    {
+      "Title": "Pure Farming 2018",
+      "Publisher": "Techland Publishing",
+      "Genre": "Simulation,"
+    },
+    {
+      "Title": "Pyre",
+      "Publisher": "Supergiant Games",
+      "Genre": "Action,Indie,Role Playing,"
+    },
+    {
+      "Title": "Q.U.B.E. 2",
+      "Publisher": "Trapped Nerve Ltd",
+      "Genre": "Indie,Adventure,Action,"
+    },
+    {
+      "Title": "Quake II RTX",
+      "Publisher": "NVIDIA Corporation",
+      "Genre": "Action,First-Person Shooter,Free To Play,"
+    },
+    {
+      "Title": "Quake® Champions",
+      "Publisher": "Bethesda Softworks",
+      "Genre": "First-Person Shooter,Free To Play,"
+    },
+    {
+      "Title": "Race With Ryan",
+      "Publisher": "Outright Games Ltd",
+      "Genre": "Family,Racing,Sports,"
+    },
+    {
+      "Title": "RAD",
+      "Publisher": "BANDAI NAMCO Entertainment America Inc.",
+      "Genre": "Action,"
+    },
+    {
+      "Title": "Raft",
+      "Publisher": "Axolot Games",
+      "Genre": "Adventure,"
+    },
+    {
+      "Title": "RAGE 2",
+      "Publisher": "Bethesda Softworks LLC",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "RAGE 2",
+      "Publisher": "Bethesda Softworks LLC",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "RAID: World War II",
+      "Publisher": "Starbreeze Publishing AB",
+      "Genre": "Action,Adventure,Role Playing,"
+    },
+    {
+      "Title": "Ravenfield",
+      "Publisher": "SteelRaven7",
+      "Genre": "Action,Indie,"
+    },
+    {
+      "Title": "Realm Grinder",
+      "Publisher": "Kongregate",
+      "Genre": "Casual,Free To Play,Role Playing,Strategy,"
+    },
+    {
+      "Title": "Realm Royale",
+      "Publisher": "Hi-Rez Studios",
+      "Genre": "Action,Free To Play,First-Person Shooter,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "realMyst: Masterpiece Edition",
+      "Publisher": "Cyan Worlds Inc.",
+      "Genre": "Adventure,Casual,Indie,Puzzle,"
+    },
+    {
+      "Title": "Reigns: Game of Thrones",
+      "Publisher": "Devolver Digital",
+      "Genre": "Adventure,Indie,Role Playing,"
+    },
+    {
+      "Title": "Remnant: From the Ashes",
+      "Publisher": "Perfect World Entertainment",
+      "Genre": "Action,Adventure,Role Playing,"
+    },
+    {
+      "Title": "Rend",
+      "Publisher": "Frostkeep Studios",
+      "Genre": "Action,Adventure,Indie,Massively Multiplayer OnlineRole Playing,Strategy,"
+    },
+    {
+      "Title": "RIDE 3",
+      "Publisher": "Milestone S.r.l.",
+      "Genre": "Racing,Simulation,Sports,"
+    },
+    {
+      "Title": "RiME",
+      "Publisher": "Grey Box",
+      "Genre": "Adventure,Puzzle,"
+    },
+    {
+      "Title": "RimWorld",
+      "Publisher": "Ludeon Studios",
+      "Genre": "Indie,Simulation,Strategy,"
+    },
+    {
+      "Title": "Risen 3 - Titan Lords",
+      "Publisher": "Deep Silver",
+      "Genre": "Role Playing,Adventure,"
+    },
+    {
+      "Title": "Rising Storm 2: Vietnam",
+      "Publisher": "Tripwire Interactive",
+      "Genre": "Action,Massively Multiplayer Online,Simulation,Strategy,"
+    },
+    {
+      "Title": "Riven: The Sequel to MYST",
+      "Publisher": "Cyan Worlds Inc.",
+      "Genre": "Adventure,Casual,Puzzle,"
+    },
+    {
+      "Title": "Rocket League®",
+      "Publisher": "Psyonix, inc.",
+      "Genre": "Action,Arcade,Casual,RacingSports,"
+    },
+    {
+      "Title": "Rugby 20",
+      "Publisher": "Bigben Interactive",
+      "Genre": "Simulation,Sports,"
+    },
+    {
+      "Title": "Russian Fishing 4",
+      "Publisher": "Russian Fishing",
+      "Genre": "Adventure,Casual,Free To Play,Massively Multiplayer OnlineRole Playing,Simulation,Sports,"
+    },
+    {
+      "Title": "Rust",
+      "Publisher": "Facepunch Studios",
+      "Genre": "Action,Adventure,Indie,Massively Multiplayer OnlineRole Playing,"
+    },
+    {
+      "Title": "Sacred 3",
+      "Publisher": "Deep Silver",
+      "Genre": "Role Playing,Action,"
+    },
+    {
+      "Title": "Salt and Sanctuary",
+      "Publisher": "Ska Studios",
+      "Genre": "Action,Indie,Role Playing,"
+    },
+    {
+      "Title": "SCP: Secret Laboratory",
+      "Publisher": "Northwood Studios",
+      "Genre": "Action,First-Person Shooter,Free To Play,IndieRole Playing,"
+    },
+    {
+      "Title": "SCUM",
+      "Publisher": "Devolver Digital",
+      "Genre": "Action,Adventure,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "Sekiro™: Shadows Die Twice",
+      "Publisher": "Activision, Inc",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Semblance",
+      "Publisher": "Good Shepherd Entertainment",
+      "Genre": "Indie,Puzzle,Adventure,Action,"
+    },
+    {
+      "Title": "Session: Skateboarding Sim Game",
+      "Publisher": "Crea-ture Studios",
+      "Genre": "Indie,Simulation,Sports,Strategy,"
+    },
+    {
+      "Title": "Shadow Warrior 2",
+      "Publisher": "Devolver Digital",
+      "Genre": "Action,Adventure,First-Person Shooter,"
+    },
+    {
+      "Title": "Shadowrun Returns",
+      "Publisher": "Harebrained Schemes",
+      "Genre": "Adventure,Indie,Role Playing,Strategy,"
+    },
+    {
+      "Title": "Shenmue I & II",
+      "Publisher": "SEGA",
+      "Genre": "Action,Adventure,Role Playing,"
+    },
+    {
+      "Title": "Shenmue III",
+      "Publisher": "Deep Silver",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Sid Meier’s Civilization® VI",
+      "Publisher": "2K Games",
+      "Genre": "Strategy,"
+    },
+    {
+      "Title": "Sid Meier's Civilization® V",
+      "Publisher": "2K Games",
+      "Genre": "Strategy,"
+    },
+    {
+      "Title": "Silver Chains",
+      "Publisher": "Headup",
+      "Genre": "Adventure,Indie,"
+    },
+    {
+      "Title": "Skybolt Zack",
+      "Publisher": "Green Man Gaming",
+      "Genre": "Action,Adventure,Arcade,IndiePlatformer,"
+    },
+    {
+      "Title": "Slay the Spire",
+      "Publisher": "Mega Crit Games",
+      "Genre": "Indie,Strategy,"
+    },
+    {
+      "Title": "SMITE®",
+      "Publisher": "Hi-Rez Studios",
+      "Genre": "Action,Free To Play,Multiplayer Online Battle Arena,"
+    },
+    {
+      "Title": "Sniper Elite 3",
+      "Publisher": "Rebellion",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Sniper Elite 4",
+      "Publisher": "Rebellion",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Sniper Elite V2 Remastered",
+      "Publisher": "Rebellion",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "SOMA",
+      "Publisher": "Frictional Games",
+      "Genre": "Action,Adventure,Indie,"
+    },
+    {
+      "Title": "Sonic Forces",
+      "Publisher": "SEGA",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Sonic Mania",
+      "Publisher": "SEGA",
+      "Genre": "Action,Adventure,Family,Arcade,"
+    },
+    {
+      "Title": "SOULCALIBUR™ VI",
+      "Publisher": "Bandai Namco Entertainment",
+      "Genre": "Action,Arcade,"
+    },
+    {
+      "Title": "SoulWorker",
+      "Publisher": "Gameforge 4D GmbH",
+      "Genre": "Free To Play,Role Playing,Massively Multiplayer Online,Action,"
+    },
+    {
+      "Title": "Space Engineers",
+      "Publisher": "Keen Software House",
+      "Genre": "Action,Indie,Simulation,Strategy,"
+    },
+    {
+      "Title": "Space Hulk: Tactics",
+      "Publisher": "Focus Home Interactive",
+      "Genre": "Strategy,"
+    },
+    {
+      "Title": "Spacelords",
+      "Publisher": "MercurySteam",
+      "Genre": "Adventure,Action,Free To Play,Indie,"
+    },
+    {
+      "Title": "SpellForce 3",
+      "Publisher": "THQ Nordic",
+      "Genre": "Role Playing,Strategy,"
+    },
+    {
+      "Title": "SpellForce 3: Soul Harvest",
+      "Publisher": "THQ Nordic",
+      "Genre": "Role Playing,Strategy,"
+    },
+    {
+      "Title": "Spintires: MudRunner",
+      "Publisher": "Focus Home Interactive",
+      "Genre": "Simulation,Racing,"
+    },
+    {
+      "Title": "Splitgate: Arena Warfare",
+      "Publisher": "1047 Games",
+      "Genre": "First-Person Shooter,Free To Play,"
+    },
+    {
+      "Title": "SpyParty",
+      "Publisher": "Chris Hecker",
+      "Genre": "Action,Indie,Simulation,Strategy,"
+    },
+    {
+      "Title": "Spyro™ Reignited Trilogy",
+      "Publisher": "Activision",
+      "Genre": "Action,Adventure,First-Person Shooter,Platformer,"
+    },
+    {
+      "Title": "Squad",
+      "Publisher": "Offworld Industries",
+      "Genre": "Action,Indie,Strategy,"
+    },
+    {
+      "Title": "Star Control®: Origins",
+      "Publisher": "Stardock Entertainment",
+      "Genre": "Action,Adventure,Casual,IndieRole Playing,Simulation,Strategy,"
+    },
+    {
+      "Title": "Star Wars: Battlefront 2 (Classic, 2005)",
+      "Publisher": "Disney Interactive",
+      "Genre": "Action,"
+    },
+    {
+      "Title": "STAR WARS™ - Knights of the Old Republic™",
+      "Publisher": "Disney Interactive, Lucasfilm",
+      "Genre": "Adventure,Role Playing,"
+    },
+    {
+      "Title": "Starbound",
+      "Publisher": "Chucklefish",
+      "Genre": "Action,Adventure,Indie,Role Playing,"
+    },
+    {
+      "Title": "StarCraft II®",
+      "Publisher": "Blizzard Entertainment",
+      "Genre": "Strategy,"
+    },
+    {
+      "Title": "StarCraft® Remastered",
+      "Publisher": "Activision Blizzard",
+      "Genre": "Strategy,Multiplayer Online Battle Arena,"
+    },
+    {
+      "Title": "Stardew Valley",
+      "Publisher": "Chucklefish",
+      "Genre": "Indie,Role Playing,Simulation,"
+    },
+    {
+      "Title": "Startup Company",
+      "Publisher": "Hovgaard Games",
+      "Genre": "Casual,Indie,Simulation,Strategy,"
+    },
+    {
+      "Title": "Steam®",
+      "Publisher": "Valve Corporation",
+      "Genre": ","
+    },
+    {
+      "Title": "Stellaris",
+      "Publisher": "Paradox Interactive",
+      "Genre": "Strategy,"
+    },
+    {
+      "Title": "Still There",
+      "Publisher": "Iceberg Interactive",
+      "Genre": "Adventure,Indie,Puzzle,"
+    },
+    {
+      "Title": "Strange Brigade",
+      "Publisher": "Rebellion",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Subnautica",
+      "Publisher": "Unknown Worlds",
+      "Genre": "Adventure,"
+    },
+    {
+      "Title": "Subnautica: Below Zero",
+      "Publisher": "Unknown Worlds Entertainment",
+      "Genre": "Adventure,Indie,"
+    },
+    {
+      "Title": "Sundered",
+      "Publisher": "Thunder Lotus Games",
+      "Genre": "Action,Adventure,Indie,Platformer,"
+    },
+    {
+      "Title": "Sunset Overdrive",
+      "Publisher": "Microsoft Studios",
+      "Genre": "Action,First-Person Shooter,Adventure,"
+    },
+    {
+      "Title": "Super Mega Baseball 2",
+      "Publisher": "Metalhead Software Inc.",
+      "Genre": "Indie,Family,Sports,Simulation,"
+    },
+    {
+      "Title": "Surviving Mars",
+      "Publisher": "Paradox Interactive",
+      "Genre": "Simulation,Strategy,"
+    },
+    {
+      "Title": "Switchblade",
+      "Publisher": "Lucid Publishing Ltd",
+      "Genre": "Indie,Action,Multiplayer Online Battle Arena,"
+    },
+    {
+      "Title": "Tabletop Simulator",
+      "Publisher": "Berserk Games",
+      "Genre": "Casual,Family,Indie,Role PlayingStrategy,"
+    },
+    {
+      "Title": "Tacoma",
+      "Publisher": "Fullbright",
+      "Genre": "Adventure,Indie,"
+    },
+    {
+      "Title": "Team Fortress 2",
+      "Publisher": "Valve",
+      "Genre": "Action,Free To Play,"
+    },
+    {
+      "Title": "Team Sonic Racing™",
+      "Publisher": "SEGA",
+      "Genre": "Family,Racing,"
+    },
+    {
+      "Title": "TEKKEN 7",
+      "Publisher": "BANDAI NAMCO Entertainment",
+      "Genre": "Action,Arcade,"
+    },
+    {
+      "Title": "TERA",
+      "Publisher": "En Masse Entertainment",
+      "Genre": "Action,Adventure,Free To Play,Massively Multiplayer OnlineRole Playing,"
+    },
+    {
+      "Title": "Terminator: Resistance",
+      "Publisher": "Reef Entertainment",
+      "Genre": "Action,Adventure,Role Playing,"
+    },
+    {
+      "Title": "Terraria",
+      "Publisher": "Re-Logic",
+      "Genre": "Action,Adventure,Indie,Role Playing,"
+    },
+    {
+      "Title": "The Bard's Tale IV",
+      "Publisher": "inXile Entertainment",
+      "Genre": "Role Playing,"
+    },
+    {
+      "Title": "The Bradwell Conspiracy",
+      "Publisher": "Bossa Studios",
+      "Genre": "Adventure,Casual,Indie,"
+    },
+    {
+      "Title": "The Crew® 2",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Racing,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "The Crew® 2",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Racing,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "The Crew™",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Massively Multiplayer Online,Racing,"
+    },
+    {
+      "Title": "The Crew™",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Massively Multiplayer Online,Racing,"
+    },
+    {
+      "Title": "The D.R.G. Initiative",
+      "Publisher": "Slingshot Cartel",
+      "Genre": "Action,Indie,"
+    },
+    {
+      "Title": "The Darkness II",
+      "Publisher": "2K Games",
+      "Genre": "Action,Adventure,Role Playing,"
+    },
+    {
+      "Title": "The Elder Scrolls V: Skyrim",
+      "Publisher": "Bethesda Softworks",
+      "Genre": "Role Playing,"
+    },
+    {
+      "Title": "The Elder Scrolls V: Skyrim Special Edition",
+      "Publisher": "Bethesda Softworks",
+      "Genre": "Role Playing,"
+    },
+    {
+      "Title": "The Elder Scrolls® Online: Elsweyr",
+      "Publisher": "Bethesda Softworks",
+      "Genre": "Role Playing,Massively Multiplayer Online,Adventure,Action,"
+    },
+    {
+      "Title": "The Evil Within 2",
+      "Publisher": "Bethesda Softworks",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "The Fisherman - Fishing Planet",
+      "Publisher": "Bigben Interactive",
+      "Genre": "Massively Multiplayer Online,Simulation,Sports,"
+    },
+    {
+      "Title": "The Forest",
+      "Publisher": "Endnight Games Ltd",
+      "Genre": "First-Person Shooter,"
+    },
+    {
+      "Title": "The Golf Club™ 2019 featuring PGA TOUR",
+      "Publisher": "2K",
+      "Genre": "Sports,Indie,Simulation,Strategy,"
+    },
+    {
+      "Title": "The Isle",
+      "Publisher": "Afterthought LLC",
+      "Genre": "Action,Adventure,Indie,Massively Multiplayer OnlineSimulation,"
+    },
+    {
+      "Title": "The Jackbox Party Pack 3",
+      "Publisher": "Jackbox Games, Inc.",
+      "Genre": "Casual,Family,Indie,Strategy,"
+    },
+    {
+      "Title": "THE KING OF FIGHTERS '98 ULTIMATE MATCH FINAL EDITION",
+      "Publisher": "SNK CORPORATION",
+      "Genre": "Action,Arcade,"
+    },
+    {
+      "Title": "The Legend of Bum-Bo",
+      "Publisher": "Edmund McMillen",
+      "Genre": "Adventure,Indie,Strategy,"
+    },
+    {
+      "Title": "The Legend of Heroes: Trails of Cold Steel",
+      "Publisher": "XSEED Games, Marvelous USA, Inc.",
+      "Genre": "Adventure,Role Playing,"
+    },
+    {
+      "Title": "The LEGO® Movie - Videogame",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,Family,Adventure,"
+    },
+    {
+      "Title": "The LEGO® Movie 2 Videogame",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,Adventure,Casual,Family,"
+    },
+    {
+      "Title": "The LEGO® NINJAGO® Movie Video Game",
+      "Publisher": "Warner Bros. Interactive Entertainment",
+      "Genre": "Action,Family,Adventure,"
+    },
+    {
+      "Title": "The Long Dark",
+      "Publisher": "Hinterland Studio Inc.",
+      "Genre": "Adventure,Indie,Strategy,Simulation,"
+    },
+    {
+      "Title": "The Surge",
+      "Publisher": "Focus Home Interactive",
+      "Genre": "Action,Role Playing,"
+    },
+    {
+      "Title": "The Surge 2",
+      "Publisher": "Focus Home Interactive",
+      "Genre": "Action,"
+    },
+    {
+      "Title": "The Walking Dead: The Final Season",
+      "Publisher": "Telltale Games",
+      "Genre": "Adventure,Action,"
+    },
+    {
+      "Title": "The Witcher 2: Assassins of Kings Enhanced Edition",
+      "Publisher": "CD Projekt RED",
+      "Genre": "Role Playing,"
+    },
+    {
+      "Title": "The Witcher® 3: Wild Hunt",
+      "Publisher": "CD PROJEKT RED",
+      "Genre": "Role Playing,"
+    },
+    {
+      "Title": "The Witness",
+      "Publisher": "Thekla, Inc.",
+      "Genre": "Adventure,Casual,Indie,Puzzle,"
+    },
+    {
+      "Title": "theHunter: Call of the Wild™",
+      "Publisher": "Avalanche Studios",
+      "Genre": "Adventure,Simulation,Sports,"
+    },
+    {
+      "Title": "They Are Billions",
+      "Publisher": "Numantian Games",
+      "Genre": "Strategy,"
+    },
+    {
+      "Title": "Thief Simulator",
+      "Publisher": "PlayWay S.A.",
+      "Genre": "Action,Adventure,Indie,Simulation,"
+    },
+    {
+      "Title": "This War of Mine",
+      "Publisher": "11 bit studios",
+      "Genre": "Adventure,Indie,Platformer,Simulation,"
+    },
+    {
+      "Title": "Thronebreaker: The Witcher Tales",
+      "Publisher": "CD PROJEKT RED",
+      "Genre": "Adventure,Role Playing,"
+    },
+    {
+      "Title": "Tom Clancy’s Ghost Recon Breakpoint",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Tom Clancy’s The Division® 2",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,Role Playing,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "Tom Clancy’s The Division® 2",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,Role Playing,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "Tom Clancy's Ghost Recon® Wildlands",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Tom Clancy's Ghost Recon® Wildlands",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Tom Clancy's Rainbow Six® Siege",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,First-Person Shooter,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "Tom Clancy's Rainbow Six® Siege",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Tom Clancy's Rainbow Six® Siege - Technical Test Server",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Tom Clancy's The Division™",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,Role Playing,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "Tom Clancy's The Division™",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,Role Playing,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "Torchlight II",
+      "Publisher": "Runic Games",
+      "Genre": "Action,Adventure,Indie,Role Playing,"
+    },
+    {
+      "Title": "Total War: THREE KINGDOMS",
+      "Publisher": "SEGA",
+      "Genre": "Action,Strategy,"
+    },
+    {
+      "Title": "Totally Accurate Battle Simulator",
+      "Publisher": "Landfall",
+      "Genre": "Casual,Indie,Simulation,Strategy,"
+    },
+    {
+      "Title": "Totally Accurate Battlegrounds",
+      "Publisher": "Landfall",
+      "Genre": "Action,Casual,Indie,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "Tower of Time",
+      "Publisher": "Event Horizon",
+      "Genre": "Role Playing,Strategy,"
+    },
+    {
+      "Title": "Transport Fever",
+      "Publisher": "Good Shepherd Entertainment",
+      "Genre": "Simulation,"
+    },
+    {
+      "Title": "Transport Fever 2",
+      "Publisher": "Good Shepherd Entertainment",
+      "Genre": "Simulation,Strategy,"
+    },
+    {
+      "Title": "Tree of Savior",
+      "Publisher": "IMCGAMES Co.,Ltd.",
+      "Genre": "Free To Play,Massively Multiplayer Online,Role Playing,"
+    },
+    {
+      "Title": "Trials® Rising",
+      "Publisher": "Ubisoft",
+      "Genre": "Racing,"
+    },
+    {
+      "Title": "Trials® Rising",
+      "Publisher": "Ubisoft",
+      "Genre": "Racing,"
+    },
+    {
+      "Title": "Tricky Towers",
+      "Publisher": "WeirdBeard",
+      "Genre": "Casual,Indie,Puzzle,Strategy,"
+    },
+    {
+      "Title": "Trine 4: The Nightmare Prince",
+      "Publisher": "Frozenbyte",
+      "Genre": "Action,Adventure,Indie,PlatformerPuzzle,"
+    },
+    {
+      "Title": "Triton Survival",
+      "Publisher": "DreamsSoftGames",
+      "Genre": "Action,Indie,Role Playing,"
+    },
+    {
+      "Title": "Tropico 6",
+      "Publisher": "Kalypso Media",
+      "Genre": "Casual,Simulation,Strategy,"
+    },
+    {
+      "Title": "Trove",
+      "Publisher": "Trion Worlds",
+      "Genre": "Action,Adventure,Casual,Free To PlayIndie,Massively Multiplayer Online,Role Playing,"
+    },
+    {
+      "Title": "Trover Saves The Universe",
+      "Publisher": "Squanch Games, Inc.",
+      "Genre": "Action,Adventure,Indie,"
+    },
+    {
+      "Title": "TT Isle of Man",
+      "Publisher": "Bigben Interactive",
+      "Genre": "Racing,Sports,Simulation,"
+    },
+    {
+      "Title": "Two Point Hospital",
+      "Publisher": "SEGA",
+      "Genre": "Simulation,Strategy,"
+    },
+    {
+      "Title": "Ultimate Fishing Simulator",
+      "Publisher": "Ultimate Games S.A., PlayWay S.A.",
+      "Genre": "Casual,Simulation,Sports,"
+    },
+    {
+      "Title": "Underworld Ascendant®",
+      "Publisher": "505 Games",
+      "Genre": "Action,Adventure,Indie,Role Playing,"
+    },
+    {
+      "Title": "Unknown Fate",
+      "Publisher": "1C Publishing",
+      "Genre": "Indie,Adventure,"
+    },
+    {
+      "Title": "Unturned",
+      "Publisher": "Smartly Dressed Games",
+      "Genre": "Action,Adventure,Free To Play,Indie,"
+    },
+    {
+      "Title": "URU: Complete Chronicles",
+      "Publisher": "Cyan Worlds Inc.",
+      "Genre": "Adventure,Casual,Puzzle,"
+    },
+    {
+      "Title": "Valkyria Chronicles 4",
+      "Publisher": "SEGA",
+      "Genre": "Action,Role Playing,Strategy,"
+    },
+    {
+      "Title": "Vampyr",
+      "Publisher": "Dontnod Entertainment",
+      "Genre": "Action,Role Playing,"
+    },
+    {
+      "Title": "Vanquish",
+      "Publisher": "SEGA",
+      "Genre": "First-Person Shooter,Action,"
+    },
+    {
+      "Title": "V-Rally 4",
+      "Publisher": "Bigben",
+      "Genre": "Racing,"
+    },
+    {
+      "Title": "War of Rights",
+      "Publisher": "Campfire Games",
+      "Genre": "Action,Indie,Simulation,"
+    },
+    {
+      "Title": "War Thunder",
+      "Publisher": "Gaijin Entertainment",
+      "Genre": "Action,Massively Multiplayer Online,Free To Play,Simulation,"
+    },
+    {
+      "Title": "War Thunder",
+      "Publisher": "Gaijin Entertainment",
+      "Genre": "Massively Multiplayer Online,Free To Play,Simulation,Action,"
+    },
+    {
+      "Title": "Warframe",
+      "Publisher": "Digital Extremes",
+      "Genre": "Action,Free To Play,Multiplayer Online Battle Arena,"
+    },
+    {
+      "Title": "Warhammer 40,000: Inquisitor - Martyr",
+      "Publisher": "NeocoreGames",
+      "Genre": "Action,Indie,Adventure,Role Playing,"
+    },
+    {
+      "Title": "Warhammer 40,000: Inquisitor - Prophecy",
+      "Publisher": "NeocoreGames",
+      "Genre": "Action,Adventure,Indie,Role Playing,"
+    },
+    {
+      "Title": "Warhammer 40,000: Mechanicus",
+      "Publisher": "Kasedo Games",
+      "Genre": "Strategy,"
+    },
+    {
+      "Title": "Warhammer: Chaosbane",
+      "Publisher": "Bigben Interactive",
+      "Genre": "Action,Adventure,Role Playing,"
+    },
+    {
+      "Title": "Warhammer: End Times - Vermintide",
+      "Publisher": "Fatshark",
+      "Genre": "Action,Indie,"
+    },
+    {
+      "Title": "Warhammer: Vermintide 2",
+      "Publisher": "Fatshark",
+      "Genre": "Action,Indie,"
+    },
+    {
+      "Title": "WARRIORS OROCHI 4",
+      "Publisher": "KOEI TECMO GAMES CO., LTD.",
+      "Genre": "Action,"
+    },
+    {
+      "Title": "Watch_Dogs® 2",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Watch_Dogs® 2",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Watch_Dogs™",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "Watch_Dogs™",
+      "Publisher": "Ubisoft",
+      "Genre": "Action,Adventure,"
+    },
+    {
+      "Title": "We Happy Few",
+      "Publisher": "Compulsion Games",
+      "Genre": "Adventure,Role Playing,Action,Indie,"
+    },
+    {
+      "Title": "Welcome to the Game II",
+      "Publisher": "Reflect Studios",
+      "Genre": "Indie,Simulation,Strategy,"
+    },
+    {
+      "Title": "Will To Live Online",
+      "Publisher": "AlphaSoft LLC",
+      "Genre": "Action,Indie,Massively Multiplayer Online,Role Playing,"
+    },
+    {
+      "Title": "Wolfenstein® II: The New Colossus™",
+      "Publisher": "Bethesda Softworks",
+      "Genre": "First-Person Shooter,Action,"
+    },
+    {
+      "Title": "Wolfenstein®: The New Order",
+      "Publisher": "Bethesda Softworks",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Wolfenstein®: The Old Blood™",
+      "Publisher": "Bethesda Softworks",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Wolfenstein®: Youngblood",
+      "Publisher": "Bethesda Softworks",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "Wolfenstein®: Youngblood",
+      "Publisher": "Bethesda Softworks",
+      "Genre": "Action,First-Person Shooter,"
+    },
+    {
+      "Title": "World of Tanks",
+      "Publisher": "Wargaming",
+      "Genre": "Action,Free To Play,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "World of Tanks: Blitz",
+      "Publisher": "Wargaming Group Limited",
+      "Genre": "Action,Free To Play,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "World of Warcraft Classic",
+      "Publisher": "Blizzard Entertainment",
+      "Genre": "Massively Multiplayer Online,Role Playing,"
+    },
+    {
+      "Title": "World of Warcraft: Battle for Azeroth",
+      "Publisher": "Blizzard Entertainment",
+      "Genre": "Massively Multiplayer Online,Role Playing,"
+    },
+    {
+      "Title": "World of Warships",
+      "Publisher": "Wargaming Group Limited",
+      "Genre": "Action,Free To Play,Massively Multiplayer Online,Simulation,"
+    },
+    {
+      "Title": "World of Warships",
+      "Publisher": "Wargaming Group Limited",
+      "Genre": "Action,Free To Play,Massively Multiplayer Online,Simulation,"
+    },
+    {
+      "Title": "World War 3",
+      "Publisher": "The Farm 51",
+      "Genre": "Action,First-Person Shooter,Indie,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "World War Z",
+      "Publisher": "Saber Interactive",
+      "Genre": "Action,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "Worms W.M.D",
+      "Publisher": "Team17 Digital Ltd",
+      "Genre": "Action,Casual,Family,Strategy,"
+    },
+    {
+      "Title": "Wreckfest",
+      "Publisher": "THQ Nordic",
+      "Genre": "Action,Indie,Sports,SimulationRacing,"
+    },
+    {
+      "Title": "WWE 2K19",
+      "Publisher": "2K",
+      "Genre": "Simulation,Sports,"
+    },
+    {
+      "Title": "WWE 2K20",
+      "Publisher": "2K",
+      "Genre": "Simulation,Sports,"
+    },
+    {
+      "Title": "Wytchsun: Elleros Origins",
+      "Publisher": "Rampage Interactive",
+      "Genre": "Action,Adventure,Indie,Role Playing,"
+    },
+    {
+      "Title": "X4: Foundations",
+      "Publisher": "Egosoft",
+      "Genre": "Action,Simulation,"
+    },
+    {
+      "Title": "XCOM® 2",
+      "Publisher": "2K Games",
+      "Genre": "Strategy,"
+    },
+    {
+      "Title": "XERA: Survival",
+      "Publisher": "Spotted Kiwi Productions",
+      "Genre": "Action,Adventure,Massively Multiplayer Online,SimulationStrategy,"
+    },
+    {
+      "Title": "Yakuza 0",
+      "Publisher": "SEGA",
+      "Genre": "Action,Adventure,Role Playing,"
+    },
+    {
+      "Title": "Yakuza Kiwami",
+      "Publisher": "SEGA",
+      "Genre": "Action,Adventure,Role Playing,"
+    },
+    {
+      "Title": "Yoku's Island Express",
+      "Publisher": "Team17 Digital Ltd",
+      "Genre": "Adventure,Family,Indie,Platformer,"
+    },
+    {
+      "Title": "Yooka-Laylee",
+      "Publisher": "Team17 Digital Ltd",
+      "Genre": "Action,Adventure,Family,IndiePlatformer,"
+    },
+    {
+      "Title": "Yooka-Laylee and the Impossible Lair",
+      "Publisher": "Team17 Digital",
+      "Genre": "Adventure,Family,Indie,Platformer,"
+    },
+    {
+      "Title": "Ys VIII: Lacrimosa of DANA",
+      "Publisher": "NIS America, Inc.",
+      "Genre": "Action,Role Playing,Adventure,"
+    },
+    {
+      "Title": "Z1 Battle Royale",
+      "Publisher": "Daybreak Game Company",
+      "Genre": "Action,Adventure,Free To Play,Massively Multiplayer Online,"
+    },
+    {
+      "Title": "太吾绘卷 - The Scroll Of Taiwu",
+      "Publisher": "ConchShip Games",
+      "Genre": "Adventure,Casual,Indie,Role PlayingStrategy,"
+    }
+  ]
+}

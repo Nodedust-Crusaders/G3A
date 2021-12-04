@@ -11,11 +11,11 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      models.Review.belongsTo(models.Game)
+      models.Review.belongsTo(models.User)
     }
   };
   Review.init({
-    userId: DataTypes.INTEGER,
-    gameId: DataTypes.INTEGER,
     comment: DataTypes.STRING,
     rating: DataTypes.DOUBLE
   }, {
