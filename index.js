@@ -1,16 +1,29 @@
-const express =require('express')
-const { getAllUsers, getUsersPurchasesById } = require('./controllers/users')
-const app = express()
-const PORT = 3000
+const express = require("express");
+const { graphqlHTTP } = require("express-graphql");
+require("dotenv").config();
 
-app.get('/', (req, res) => {
-    res.send('Hello world')
-})
+const authorizationMiddleware = require("./middlewares/authorization");
+const { getAllUsers, getUsersPurchasesById } = require("./controllers/users");
 
-app.get('/users', getAllUsers)
+const app = express();
+const PORT = process.env.PORT ?? 3000;
 
-app.get('/users/:id/purchases', getUsersPurchasesById)
+// app.use(
+//   "/graphql",
+//   authorizationMiddleware,
+//   graphqlHTTP({
+//     schema,
+//   })
+// );
+
+app.get("/", (req, res) => {
+  res.send("Hello world");
+});
+
+app.get("/users", getAllUsers);
+
+app.get("/users/:id/purchases", getUsersPurchasesById);
 
 app.listen(PORT, () => {
-    console.log(`Listening to Port ${PORT}`)
-})
+  console.log(`Server started listening on port ${PORT}`);
+});
