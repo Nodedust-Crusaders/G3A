@@ -1,9 +1,33 @@
-const { GraphQLSchema, GraphQLObjectType } = require("graphql");
+const { GraphQLSchema, GraphQLObjectType, GraphQLList } = require("graphql");
+const { getAllUsers } = require("../handlers/users");
+const { authQuery, authMutation } = require("./auth");
+const { userType } = require("./user/types");
 
-const tempQuery = new GraphQLObjectType();
-const tempMut = new GraphQLObjectType();
+const query = new GraphQLObjectType({
+  name: "Query",
+  fields: {
+    users: {
+      type: new GraphQLList(userType),
+      resolve: async () => {
+        return await getAllUsers();
+      },
+    },
+    ...authQuery.toConfig().fields,
+  },
+});
+
+const mutation = new GraphQLObjectType({
+  name: "Mutation",
+  fields: {
+    ...authMutation.toConfig().fields,
+  },
+});
+
+// console.log(authMutation.getFields());
 
 const schema = new GraphQLSchema({
-  query: tempQuery,
-  mutation: tempMut,
+  query,
+  mutation,
 });
+
+module.exports = schema;
