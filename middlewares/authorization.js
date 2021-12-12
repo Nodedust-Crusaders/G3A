@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
 const db = require("../models");
 
-const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY;
+const JWT_SECRET_KEY = process.env.JWT_SECRET_TOKEN;
 
 const authorizationMiddleware = async (req, res, next) => {
   const authorization = req.headers.authorization;
