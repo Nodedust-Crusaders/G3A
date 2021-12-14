@@ -2,6 +2,7 @@ const { GraphQLSchema, GraphQLObjectType, GraphQLList } = require("graphql");
 const { getAllUsers } = require("../handlers/users");
 const { authQuery, authMutation } = require("./auth");
 const { gameQuery, gameMutation } = require("./game");
+const purchaseQuery = require("./purchase/query");
 const { userType } = require("./user/types");
 
 const query = new GraphQLObjectType({
@@ -15,6 +16,7 @@ const query = new GraphQLObjectType({
     },
     ...authQuery.toConfig().fields,
     ...gameQuery.toConfig().fields,
+    ...purchaseQuery.toConfig().fields
   },
 });
 
