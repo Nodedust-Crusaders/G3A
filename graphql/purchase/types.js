@@ -6,14 +6,26 @@ const {
     GraphQLNonNull,
     GraphQLString
 } = require ("graphql");
+const { gameType } = require("../game/types");
+const { userType } = require("../user/types");
 
 const purchaseType = new GraphQLObjectType({
     name: "PurchaseType",
     fields: {
         id: { type: GraphQLID },
-        userId: { type: GraphQLID },
-        gameId: { type: GraphQLID },
-        price: { type: GraphQLFloat }
+        price: { type: GraphQLFloat },
+        user: { 
+            type: userType,
+            resolve: async (source) => {
+                return await source.getUser();
+            }
+        },
+        game: { 
+            type: gameType,
+            resolve: async (source) => {
+                return await source.getGame();
+            }
+        },
     }
 });
 
@@ -21,7 +33,7 @@ const purchaseInputType = new GraphQLInputObjectType({
     name: "purchaseInput",
     fields: {
         userId: { type: new GraphQLNonNull(GraphQLID)},
-        gameId: { type: new GraphQLNonNull(GraphQLID)}
+        gameId: { type: new GraphQLNonNull(GraphQLID)},
     }
 })
 
