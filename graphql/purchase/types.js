@@ -1,7 +1,10 @@
 const {
     GraphQLObjectType,
+    GraphQLInputObjectType,
     GraphQLID,
-    GraphQLFloat
+    GraphQLFloat,
+    GraphQLNonNull,
+    GraphQLString
 } = require ("graphql");
 
 const purchaseType = new GraphQLObjectType({
@@ -14,4 +17,18 @@ const purchaseType = new GraphQLObjectType({
     }
 });
 
-module.exports = { purchaseType };
+const purchaseInputType = new GraphQLInputObjectType({
+    name: "purchaseInput",
+    fields: {
+        userId: { type: new GraphQLNonNull(GraphQLID)},
+        gameId: { type: new GraphQLNonNull(GraphQLID)}
+    }
+})
+
+const purchaseResultType = new GraphQLObjectType({
+    name: "purchaseResult",
+    fields: {
+        message: {type: GraphQLString}
+    }
+})
+module.exports = { purchaseType, purchaseInputType, purchaseResultType };

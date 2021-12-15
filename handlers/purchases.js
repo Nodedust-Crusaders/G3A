@@ -21,4 +21,45 @@ const getUserPurchasesWithId = async (id) => {
         return null;       
     }
 }
-module.exports = {getPurchases, getUserPurchasesWithId};
+
+const addPurchaseHandler = async (userId, gameId) => {
+    try {
+        const user = await db.User.findOne({
+            where: {
+                id: userId
+            }
+        });
+
+        const game = await db.Game.findOne({
+            where: {
+                id: gameId
+            }
+        });
+
+        if (!user) {
+            return {
+                message: "User does not exist"
+            }
+        }
+
+        if (!game) {
+            return {
+                message: "Game does not exist"
+            }
+        }
+        console.log("aaa")
+        const newPurchase = await db.Purchase.create({
+            UserId: userId,
+            GameId: gameId,
+            price: game.price
+        });
+        
+        return {
+            message: "Success"
+        }
+    } catch(err) {
+        console.error("Error @addPurchaseHandler:", err);
+        return { message: err.message };
+    }
+}
+module.exports = {getPurchases, getUserPurchasesWithId, addPurchaseHandler};
