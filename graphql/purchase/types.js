@@ -12,7 +12,7 @@ const { userType } = require("../user/types");
 const purchaseType = new GraphQLObjectType({
     name: "PurchaseType",
     fields: {
-        id: { type: GraphQLID },
+        Id: { type: GraphQLID },
         price: { type: GraphQLFloat },
         user: { 
             type: userType,

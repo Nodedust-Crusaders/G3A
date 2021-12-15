@@ -3,7 +3,7 @@ const {
     purchaseInputType,
     purchaseResultType
 } = require("./types");
-const { addPurchaseHandler } = require("../../handlers/purchases");
+const { addPurchaseHandler, removePurchaseHandler } = require("../../handlers/purchases");
 
 const purchaseMutation = new GraphQLObjectType({
     name: "PurchaseMutation",
@@ -18,6 +18,18 @@ const purchaseMutation = new GraphQLObjectType({
                 const result = await addPurchaseHandler(userId, gameId);
 
                 return result
+            }
+        },
+        removePurchase: {
+            type: purchaseResultType,
+            args: {
+                purchaseInput: {type: purchaseInputType}
+            },
+            resolve: async (source, args) => {
+                const {userId, gameId} = args.purchaseInput;
+                const result = await removePurchaseHandler(userId, gameId);
+
+                return result;
             }
         }
     }
