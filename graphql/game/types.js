@@ -7,6 +7,8 @@ const {
   GraphQLFloat,
 } = require("graphql");
 const { categoryType } = require("../category/types");
+const { platformType } = require("../platform/types");
+const { publisherType } = require("../publisher/types");
 
 const gameType = new GraphQLObjectType({
   name: "GameType",
@@ -24,6 +26,18 @@ const gameType = new GraphQLObjectType({
       type: categoryType,
       resolve: async (source) => {
         return await source.getCategory();
+      },
+    },
+    platform: {
+      type: platformType,
+      resolve: async (source) => {
+        return await source.getPlatform();
+      },
+    },
+    publisher: {
+      type: publisherType,
+      resolve: async (source) => {
+        return await source.getPublisher();
       },
     },
     publisherId: { type: GraphQLInt },
