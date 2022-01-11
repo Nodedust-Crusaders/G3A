@@ -6,6 +6,7 @@ const { purchaseType } = require("./types");
 const purchaseQuery = new GraphQLObjectType({
     name:"PurchaseQuery",
     fields: {
+        // all purchases from the db. #ROLE admin only
         purchases: {
             type: new GraphQLList (purchaseType),
             resolve: async (source, args, context) => {
@@ -13,6 +14,7 @@ const purchaseQuery = new GraphQLObjectType({
                 return getPurchases();
             }
         },
+        // purchases of currently logged user. all users should have access to see their own purchases.
         userPurchases: {
             type: new GraphQLList (purchaseType),
             resolve: async (source, args, context) => {
@@ -20,6 +22,7 @@ const purchaseQuery = new GraphQLObjectType({
                 return getUserPurchasesWithId(context.user.id);
             }           
         },
+        // see purchases of user with given id. #ROLE admin only
         purchasesWithUserId: {
             type: new GraphQLList (purchaseType),
             args: {
