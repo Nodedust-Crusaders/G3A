@@ -26,15 +26,6 @@ module.exports = {
       discount: {
         type: Sequelize.DOUBLE
       },
-      CurrencyId: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: {
-            tableName: 'Currencies'
-          },
-          key: 'id',
-        },
-      },
       PlatformId: {
         type: Sequelize.INTEGER,
         references: {
