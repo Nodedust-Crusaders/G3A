@@ -6,6 +6,7 @@ const {
   GraphQLInt,
   GraphQLFloat,
   GraphQLInputObjectType,
+  GraphQLBoolean,
 } = require("graphql");
 const db = require("../../models");
 const { categoryType } = require("../category/types");
@@ -17,6 +18,7 @@ const gameType = new GraphQLObjectType({
   fields: {
     id: { type: GraphQLID },
     title: { type: new GraphQLNonNull(GraphQLString) },
+    isAvailable: {type: GraphQLBoolean},
     description: { type: GraphQLString },
     releaseYear: { type: GraphQLInt },
     rating: { type: GraphQLFloat },

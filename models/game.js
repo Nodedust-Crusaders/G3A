@@ -37,6 +37,7 @@ module.exports = (sequelize, DataTypes) => {
   };
   Game.init({
     title: DataTypes.STRING,
+    isAvailable: DataTypes.BOOLEAN,
     description: DataTypes.STRING,
     releaseYear: DataTypes.INTEGER,
     rating: DataTypes.DOUBLE,

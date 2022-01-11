@@ -1,12 +1,11 @@
-const { GraphQLObjectType, GraphQLString, GraphQLNonNull, GraphQLInt } = require("graphql");
+const { GraphQLObjectType, GraphQLString, GraphQLNonNull, GraphQLInt, GraphQLBoolean } = require("graphql");
 const {
   gameInputType,
   gameResultType,
   editGameInputType,
-  editGameResultType
 } = require("./types");
 
-const { createGame, removeGame, editGame } = require("../../handlers/games");
+const { createGame, destroyGame, setGameVisibility, editGame } = require("../../handlers/games");
 const gameMutation = new GraphQLObjectType({
   name: "GameMutation",
   fields: {
@@ -22,17 +21,33 @@ const gameMutation = new GraphQLObjectType({
         return result;
       }
     },
-    removeGame: {
+    // deletes game from DB
+    destroyGame: {
       type: gameResultType,
       args: {
         id: { type: GraphQLInt }
       },
       resolve: async (source, args) => {
-        const result = await removeGame(args.id);
+        const result = await destroyGame(args.id);
 
         return result;
       }
     },
+    // marks game as unavailable - is hidden from showAvailableGames query
+    // why? to preserve purchase history.
+    setGameVisibility: {
+      type: gameResultType,
+      args: {
+        id: { type: GraphQLInt },
+        status: {type: GraphQLBoolean }
+      },
+      resolve: async (source, args) => {
+        const result = await setGameVisibility(args.id, args.status);
+
+        return result;
+      }
+    },    
+    
     editGame: {
       type: gameResultType,
       args: {

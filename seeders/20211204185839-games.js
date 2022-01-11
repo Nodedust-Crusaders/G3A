@@ -34,6 +34,7 @@ module.exports = {
       
       return {
         title: rawData.Title,
+        isAvailable: (Math.random() > 0.5) ? true : false,
         description: faker.lorem.paragraph(),
         // math random's is 0 inclusive, 1 exclusive, adding 5.1 to assure a 5 
         releaseYear: Math.min(2021, 2000 + Math.floor(Math.random() * 21.2)),

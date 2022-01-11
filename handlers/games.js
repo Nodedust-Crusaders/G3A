@@ -1,11 +1,27 @@
 const db = require("../models");
 
+// get all games. only admins should be able to do this
 const getGames = async () => {
   try {
     const games = await db.Game.findAll();
     return games;
   } catch (err) {
     console.log("Error @handlers/getGames: ", err);
+    return null;
+  }
+};
+
+// return only the games that are available for purchase.
+const getAvailableGames = async () => {
+  try {
+    const games = await db.Game.findAll({
+      where: {
+        isAvailable: true
+      }
+    });
+    return games;
+  } catch (err) {
+    console.log("Error @handlers/getAvailableGames: ", err);
     return null;
   }
 };
@@ -47,7 +63,7 @@ const editGame = async (gameId, newGameData) => {
     console.log("Error @handlers/editGame:", err);
     return {
       message: err,
-      obj:null
+      obj: null
     }
   }
 }
@@ -88,7 +104,7 @@ const createGame = async (gameData) => {
   }
 }
 
-const removeGame = async (id) => {
+const destroyGame = async (id) => {
   try {
     const game = await db.Game.findByPk(id);
     if (!game) {
@@ -110,4 +126,23 @@ const removeGame = async (id) => {
     return null;
   }
 }
-module.exports = { getGames, getGame, createGame, removeGame, editGame };
+
+const setGameVisibility = async (id, status) => {
+  try {
+    const game = await db.Game.findByPk(id);
+    if (!game) {
+      return {
+        message: "Game does not exist"
+      }
+    }
+    game.isAvailable = status;
+    const res = game.save();
+    return {
+      message: "Success"
+    }
+  } catch (err) {
+    console.log("Error @handlers/removeGame:", err);
+    return null;
+  }
+}
+module.exports = { getGames, getAvailableGames, getGame, createGame, destroyGame, editGame, setGameVisibility };

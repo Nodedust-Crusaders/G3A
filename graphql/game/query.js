@@ -1,5 +1,5 @@
 const { GraphQLObjectType, GraphQLID, GraphQLList } = require("graphql");
-const { getGame, getGames } = require("../../handlers/games");
+const { getGame, getGames, getAvailableGames } = require("../../handlers/games");
 const { gameType } = require("./types");
 
 const gameQuery = new GraphQLObjectType({
@@ -12,8 +12,15 @@ const gameQuery = new GraphQLObjectType({
         return getGames();
       },
     },
+    availableGames: {
+      type: new GraphQLList(gameType),
+      resolve: async (source, args, context) => {
+        if (!context.user) return null;
+        return getAvailableGames();
+      },
+    },
     game: {
-      type: gameType,
+      type: gameType,   
       args: {
         id: { type: GraphQLID },
       },
