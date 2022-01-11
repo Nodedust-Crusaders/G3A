@@ -119,7 +119,8 @@ const removePurchaseHandler = async (userId, gameId) => {
         }
 
     } catch (err) {
-
+        console.error('Error @removeReviewHandler:', err);
+		return { message: err.message}
     }
 }
 module.exports = {getPurchases, getUserPurchasesWithId, addPurchaseHandler, removePurchaseHandler};
