@@ -14,9 +14,6 @@ module.exports = (sequelize, DataTypes) => {
       models.Game.belongsTo(models.Publisher, {
         foreignKey: 'PublisherId'
       })
-      models.Game.belongsTo(models.Currency, {
-        foreignKey: 'CurrencyId'
-      })
       models.Game.belongsTo(models.Category, {
         foreignKey: 'CategoryId'
       })
@@ -43,7 +40,6 @@ module.exports = (sequelize, DataTypes) => {
     rating: DataTypes.DOUBLE,
     price: DataTypes.DOUBLE,
     discount: DataTypes.DOUBLE,
-    CurrencyId: DataTypes.INTEGER,
     PlatformId: DataTypes.INTEGER,
     CategoryId: DataTypes.INTEGER,
     PublisherId: DataTypes.INTEGER

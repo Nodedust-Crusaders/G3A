@@ -24,7 +24,6 @@ const gameType = new GraphQLObjectType({
     rating: { type: GraphQLFloat },
     price: { type: GraphQLFloat },
     discount: { type: GraphQLFloat },
-    CurrencyId: { type: GraphQLInt },
     PlatformId: { type: GraphQLInt },
     category: {
       type: categoryType,
