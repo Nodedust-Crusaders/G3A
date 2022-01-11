@@ -3,8 +3,17 @@ const {
   GraphQLNonNull,
   GraphQLString,
   GraphQLInputObjectType,
+  GraphQLUnionType,
 } = require("graphql");
+const db = require("../../models");
 const { userType } = require("../user/types");
+
+const messageResultType = new GraphQLObjectType({
+  name: "MessageResult",
+  fields: {
+    message: { type: new GraphQLNonNull(GraphQLString) },
+  },
+});
 
 const loginInputType = new GraphQLInputObjectType({
   name: "LoginInput",
@@ -32,10 +41,15 @@ const registerInputType = new GraphQLInputObjectType({
   },
 });
 
-const registerResultType = new GraphQLObjectType({
+const registerResultType = new GraphQLUnionType({
   name: "RegisterResult",
-  fields: {
-    message: { type: new GraphQLNonNull(GraphQLString) },
+  types: [userType, messageResultType],
+  resolveType: (value) => {
+    if (value instanceof db.User) {
+      return "UserType";
+    }
+
+    return "MessageResult";
   },
 });
 
