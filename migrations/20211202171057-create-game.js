@@ -26,7 +26,7 @@ module.exports = {
       discount: {
         type: Sequelize.DOUBLE
       },
-      currencyId: {
+      CurrencyId: {
         type: Sequelize.INTEGER,
         references: {
           model: {
@@ -35,7 +35,7 @@ module.exports = {
           key: 'id',
         },
       },
-      platformId: {
+      PlatformId: {
         type: Sequelize.INTEGER,
         references: {
           model: {
@@ -44,7 +44,7 @@ module.exports = {
           key: 'id',
         },
       },
-      categoryId: {
+      CategoryId: {
         type: Sequelize.INTEGER,
         references: {
           model: {
@@ -53,7 +53,7 @@ module.exports = {
           key: 'id',
         },
       },
-      publisherId: {
+      PublisherId: {
         type: Sequelize.INTEGER,
         references: {
           model: {

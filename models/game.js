@@ -12,16 +12,16 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       models.Game.belongsTo(models.Publisher, {
-        foreignKey: 'publisherId'
+        foreignKey: 'PublisherId'
       })
       models.Game.belongsTo(models.Currency, {
-        foreignKey: 'currencyId'
+        foreignKey: 'CurrencyId'
       })
       models.Game.belongsTo(models.Category, {
-        foreignKey: 'categoryId'
+        foreignKey: 'CategoryId'
       })
       models.Game.belongsTo(models.Platform, {
-        foreignKey: 'platformId'
+        foreignKey: 'PlatformId'
       })
 
       models.Game.belongsToMany(models.User, {
@@ -42,10 +42,10 @@ module.exports = (sequelize, DataTypes) => {
     rating: DataTypes.DOUBLE,
     price: DataTypes.DOUBLE,
     discount: DataTypes.DOUBLE,
-    currencyId: DataTypes.INTEGER,
-    platformId: DataTypes.INTEGER,
-    categoryId: DataTypes.INTEGER,
-    publisherId: DataTypes.INTEGER
+    CurrencyId: DataTypes.INTEGER,
+    PlatformId: DataTypes.INTEGER,
+    CategoryId: DataTypes.INTEGER,
+    PublisherId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Game',

@@ -20,8 +20,8 @@ const gameType = new GraphQLObjectType({
     rating: { type: GraphQLFloat },
     price: { type: GraphQLFloat },
     discount: { type: GraphQLFloat },
-    currencyId: { type: GraphQLInt },
-    platformId: { type: GraphQLInt },
+    CurrencyId: { type: GraphQLInt },
+    PlatformId: { type: GraphQLInt },
     category: {
       type: categoryType,
       resolve: async (source) => {
@@ -40,7 +40,7 @@ const gameType = new GraphQLObjectType({
         return await source.getPublisher();
       },
     },
-    publisherId: { type: GraphQLInt },
+    PublisherId: { type: GraphQLInt },
   },
 });
 

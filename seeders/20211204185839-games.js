@@ -23,13 +23,13 @@ module.exports = {
 
     const games = gamesNames.map(gn => {
       const rawData = rawGamesData.find(rg => rg.Title === gn)
-      var categoryId = Math.floor(Math.random()*categoriesMap.size) + 1
+      var CategoryId = Math.floor(Math.random()*categoriesMap.size) + 1
       if(rawData.Genre){
-        categoryId = categoriesMap[rawData.Genre.split(',')[0]]
+        CategoryId = categoriesMap[rawData.Genre.split(',')[0]]
       }
-      var publisherId = Math.floor(Math.random()*publishersMap.size) + 1
+      var PublisherId = Math.floor(Math.random()*publishersMap.size) + 1
       if(rawData.Publisher){
-        publisherId = publishersMap[rawData.Publisher]
+        PublisherId = publishersMap[rawData.Publisher]
       }
       
       return {
@@ -40,10 +40,10 @@ module.exports = {
         rating: Math.min(5, Math.random() * 5.1),
         price: prices[Math.floor(Math.random() * prices.length)],
         discount: Math.min(100, Math.random() * 100.5),
-        currencyId: Math.floor(Math.random() * CURRENCY_LENGTH) + 1,
-        platformId: Math.floor(Math.random() * PLATFORM_LENGTH) + 1,
-        categoryId,
-        publisherId,
+        CurrencyId: Math.floor(Math.random() * CURRENCY_LENGTH) + 1,
+        PlatformId: Math.floor(Math.random() * PLATFORM_LENGTH) + 1,
+        CategoryId,
+        PublisherId,
         createdAt: new Date(),
         updatedAt: new Date(),
       }
