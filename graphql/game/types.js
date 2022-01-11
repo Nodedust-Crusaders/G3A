@@ -6,7 +6,9 @@ const {
   GraphQLInt,
   GraphQLFloat,
   GraphQLInputObjectType,
+  GraphQLBoolean,
 } = require("graphql");
+const db = require("../../models");
 const { categoryType } = require("../category/types");
 const { platformType } = require("../platform/types");
 const { publisherType } = require("../publisher/types");
@@ -16,6 +18,7 @@ const gameType = new GraphQLObjectType({
   fields: {
     id: { type: GraphQLID },
     title: { type: new GraphQLNonNull(GraphQLString) },
+    isAvailable: {type: GraphQLBoolean},
     description: { type: GraphQLString },
     releaseYear: { type: GraphQLInt },
     rating: { type: GraphQLFloat },
@@ -58,14 +61,21 @@ const gameInputType = new GraphQLInputObjectType({
     CategoryId: { type: GraphQLInt },
     PublisherId: { type: GraphQLInt }
   }
-  
-})
+
+});
 
 const gameResultType = new GraphQLObjectType({
   name: "GameResult",
   fields: {
     message: { type: new GraphQLNonNull(GraphQLString) },
-  },
-});
+  }})
+const editGameInputType = new GraphQLInputObjectType({
+  name: "EditGameInputType",
+  fields: {
+    id: { type: GraphQLInt },
+    newGameData: { type: gameInputType }
+  }
+})
 
-module.exports = { gameType, gameInputType, gameResultType };
+
+module.exports = { gameType, gameInputType, gameResultType, editGameInputType };
