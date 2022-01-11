@@ -10,6 +10,7 @@ const createUser = async ({
   firstName,
   lastName,
 }) => {
+  // TODO
   try {
     const user1 = await db.User.findOne({
       where: {
