@@ -28,13 +28,6 @@ const purchaseType = new GraphQLObjectType({
   },
 });
 
-const purchaseInputType = new GraphQLInputObjectType({
-  name: "purchaseInput",
-  fields: {
-    UserId: { type: new GraphQLNonNull(GraphQLID) },
-    GameId: { type: new GraphQLNonNull(GraphQLID) },
-  },
-});
 
 const purchaseResultType = new GraphQLObjectType({
   name: "purchaseResult",
@@ -42,4 +35,4 @@ const purchaseResultType = new GraphQLObjectType({
     message: { type: GraphQLString },
   },
 });
-module.exports = { purchaseType, purchaseInputType, purchaseResultType };
+module.exports = { purchaseType, purchaseResultType };

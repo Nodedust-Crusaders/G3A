@@ -1,4 +1,4 @@
-const { GraphQLObjectType } = require("graphql");
+const { GraphQLObjectType, GraphQLNonNull, GraphQLID, GraphQLInt } = require("graphql");
 const { purchaseInputType, purchaseResultType } = require("./types");
 const {
   addPurchaseHandler,
@@ -12,10 +12,10 @@ const purchaseMutation = new GraphQLObjectType({
     purchase: {
       type: purchaseResultType,
       args: {
-        purchaseInput: { type: purchaseInputType },
+        GameId: { type: new GraphQLNonNull(GraphQLID) },
       },
       resolve: async (source, args, context) => {
-        const { UserId, GameId } = args.purchaseInput;
+        const GameId = args.GameId;
         const result = await addPurchaseHandler(context.user.id, GameId);
 
         return result;
@@ -26,10 +26,12 @@ const purchaseMutation = new GraphQLObjectType({
     addPurchaseToUser: {
       type: purchaseResultType,
       args: {
-        purchaseInput: { type: purchaseInputType },
+        UserId: { type: new GraphQLNonNull(GraphQLID) },
+        GameId: { type: new GraphQLNonNull(GraphQLID) },
       },
       resolve: async (source, args) => {
-        const { UserId, GameId } = args.purchaseInput;
+        const UserId = args.UserId;
+        const GameId = args.GameId;
         const result = await addPurchaseHandler(UserId, GameId);
 
         return result;
@@ -39,7 +41,8 @@ const purchaseMutation = new GraphQLObjectType({
     removePurchase: {
       type: purchaseResultType,
       args: {
-        purchaseInput: { type: purchaseInputType },
+        UserId: { type: new GraphQLNonNull(GraphQLID) },
+        GameId: { type: new GraphQLNonNull(GraphQLID) },
       },
       resolve: async (source, args) => {
         const { UserId, GameId } = args.purchaseInput;
