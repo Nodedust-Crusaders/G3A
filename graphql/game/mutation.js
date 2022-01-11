@@ -1,17 +1,19 @@
 const { GraphQLObjectType, GraphQLString, GraphQLNonNull, GraphQLInt } = require("graphql");
 const {
   gameInputType,
-  gameResultType
+  gameResultType,
+  editGameInputType,
+  editGameResultType
 } = require("./types");
 
-const { createGame, removeGame } = require("../../handlers/games");
+const { createGame, removeGame, editGame } = require("../../handlers/games");
 const gameMutation = new GraphQLObjectType({
   name: "GameMutation",
   fields: {
-    addGame: {  
+    addGame: {
       type: gameResultType,
       args: {
-        gameInput: {type: gameInputType}
+        gameInput: { type: gameInputType }
       },
       resolve: async (source, args) => {
         const data = args.gameInput;
@@ -23,14 +25,28 @@ const gameMutation = new GraphQLObjectType({
     removeGame: {
       type: gameResultType,
       args: {
-          id: {type: GraphQLInt}
+        id: { type: GraphQLInt }
       },
       resolve: async (source, args) => {
-          const result = await removeGame(args.id);
+        const result = await removeGame(args.id);
 
-          return result;
+        return result;
       }
-  }
+    },
+    editGame: {
+      type: gameResultType,
+      args: {
+        data:{
+          type: editGameInputType
+      }},
+      resolve: async (source, args) => {
+        const id = args.data.id;
+        const data = args.data.newGameData;
+        const result = await editGame(id, data);
+
+        return result;
+      }
+    },
   },
 });
 
