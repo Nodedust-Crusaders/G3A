@@ -16,7 +16,6 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date(),
       }
-      console.log(newUser)
       users.push(newUser)
     }
     await queryInterface.bulkInsert('Users', users, {})
