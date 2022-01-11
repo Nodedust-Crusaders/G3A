@@ -11,6 +11,9 @@ module.exports = {
       title: {
         type: Sequelize.STRING
       },
+      isAvailable: {
+        type: Sequelize.BOOLEAN
+      },
       description: {
         type: Sequelize.STRING
       },

@@ -1,38 +1,57 @@
-const { GraphQLObjectType } = require("graphql");
+const { GraphQLObjectType, GraphQLNonNull, GraphQLID, GraphQLInt } = require("graphql");
+const { purchaseInputType, purchaseResultType } = require("./types");
 const {
-    purchaseInputType,
-    purchaseResultType
-} = require("./types");
-const { addPurchaseHandler, removePurchaseHandler } = require("../../handlers/purchases");
+  addPurchaseHandler,
+  removePurchaseHandler,
+} = require("../../handlers/purchases");
 
 const purchaseMutation = new GraphQLObjectType({
-    name: "PurchaseMutation",
-    fields: {
-        addPurchase: {
-            type: purchaseResultType,
-            args: {
-                purchaseInput: {type: purchaseInputType}
-            },
-            resolve: async (source, args) => {
-                const { userId, gameId } = args.purchaseInput;
-                const result = await addPurchaseHandler(userId, gameId);
+  name: "PurchaseMutation",
+  fields: {
+    // currently logged user make a purchase. all users should have access to buy things to their own logged accounts.
+    purchase: {
+      type: purchaseResultType,
+      args: {
+        GameId: { type: new GraphQLNonNull(GraphQLID) },
+      },
+      resolve: async (source, args, context) => {
+        const GameId = args.GameId;
+        const result = await addPurchaseHandler(context.user.id, GameId);
 
-                return result
-            }
-        },
-        removePurchase: {
-            type: purchaseResultType,
-            args: {
-                purchaseInput: {type: purchaseInputType}
-            },
-            resolve: async (source, args) => {
-                const {userId, gameId} = args.purchaseInput;
-                const result = await removePurchaseHandler(userId, gameId);
+        return result;
+      },
+    },
 
-                return result;
-            }
-        }
-    }
+    // Add purchase gameId to user userId. #ROLE Only admins should be able to do this
+    addPurchaseToUser: {
+      type: purchaseResultType,
+      args: {
+        UserId: { type: new GraphQLNonNull(GraphQLID) },
+        GameId: { type: new GraphQLNonNull(GraphQLID) },
+      },
+      resolve: async (source, args) => {
+        const UserId = args.UserId;
+        const GameId = args.GameId;
+        const result = await addPurchaseHandler(UserId, GameId);
+
+        return result;
+      },
+    },
+    // delete purchase from db. #ROLE only admins should be able to do this
+    removePurchase: {
+      type: purchaseResultType,
+      args: {
+        UserId: { type: new GraphQLNonNull(GraphQLID) },
+        GameId: { type: new GraphQLNonNull(GraphQLID) },
+      },
+      resolve: async (source, args) => {
+        const { UserId, GameId } = args.purchaseInput;
+        const result = await removePurchaseHandler(UserId, GameId);
+
+        return result;
+      },
+    },
+  },
 });
 
-module.exports = purchaseMutation
+module.exports = purchaseMutation;
