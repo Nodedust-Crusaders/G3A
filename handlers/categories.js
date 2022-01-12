@@ -86,7 +86,7 @@ const destroyCategory = async (id) => {
         message: "Category does not exist",
       };
     }
-    res = db.Category.destroy({
+    res = await db.Category.destroy({
       where: {
         id: category.id,
       },
