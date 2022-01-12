@@ -2,6 +2,7 @@ const { GraphQLSchema, GraphQLObjectType, GraphQLList } = require("graphql");
 const { getAllUsers } = require("../handlers/users");
 const { authQuery, authMutation } = require("./auth");
 const { gameQuery, gameMutation } = require("./game");
+const { publisherQuery, publisherMutation } = require("./publisher");
 const { purchaseQuery, purchaseMutation } = require("./purchase");
 const { userType } = require("./user/types");
 
@@ -16,7 +17,9 @@ const query = new GraphQLObjectType({
     },
     ...authQuery.toConfig().fields,
     ...gameQuery.toConfig().fields,
-    ...purchaseQuery.toConfig().fields
+    ...purchaseQuery.toConfig().fields,
+    ...reviewQuery.toConfig().fields,
+    ...publisherQuery.toConfig().fields
   },
 });
 
@@ -25,7 +28,9 @@ const mutation = new GraphQLObjectType({
   fields: {
     ...authMutation.toConfig().fields,
     ...gameMutation.toConfig().fields,
-    ...purchaseMutation.toConfig().fields
+    ...purchaseMutation.toConfig().fields,
+    ...reviewMutation.toConfig().fields,
+    ...publisherMutation.toConfig().fields
   },
 });
 
