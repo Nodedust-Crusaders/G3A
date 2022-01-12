@@ -1,4 +1,5 @@
 const bcrypt = require("bcrypt");
+const { Op } = require("sequelize");
 const db = require("../models");
 
 const SALT_ROUNDS = parseInt(process.env.SALT_ROUNDS);
@@ -11,19 +12,13 @@ const createUser = async ({
   lastName,
 }) => {
   try {
-    const user1 = await db.User.findOne({
+    const users = await db.User.findAll({
       where: {
-        username,
+        [Op.or]: [{ username }, { email }],
       },
     });
 
-    const user2 = await db.User.findOne({
-      where: {
-        email,
-      },
-    });
-
-    if (user1 || user2) {
+    if (users.length > 0) {
       return {
         message: "A user with the existing username or email already exists",
       };
@@ -39,9 +34,10 @@ const createUser = async ({
       lastName,
     });
 
-    return {
-      message: "Successfully created the user",
-    };
+    return newUser;
+    // return {
+    //   message: "Successfully created the user",
+    // };
   } catch (err) {
     console.error("Error @registerHandler:", err);
     return { message: err.message };
