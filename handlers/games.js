@@ -36,7 +36,8 @@ const getFilteredGames = async (
     let queryObject = {};
     if (CategoryId) {
       queryObject.CategoryId = CategoryId;
-    } else if (PlatformId) {
+    } 
+    if (PlatformId) {
       queryObject.PlatformId = PlatformId;
     }
     if (PublisherId) {
@@ -46,6 +47,7 @@ const getFilteredGames = async (
     if (!showUnavailable) {
       queryObject.isAvailable = true;
     }
+    console.log(queryObject)
     const games = await db.Game.findAll({
       where: queryObject,
     });
@@ -175,4 +177,5 @@ module.exports = {
   destroyGame,
   editGame,
   setGameVisibility,
+  getFilteredGames
 };

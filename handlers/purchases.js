@@ -91,6 +91,7 @@ const removePurchaseHandler = async (userId, gameId) => {
       };
     }
 
+
     const toBeDeleted = await db.Purchase.findOne({
       where: {
         UserId: userId,
@@ -103,7 +104,7 @@ const removePurchaseHandler = async (userId, gameId) => {
       };
     }
 
-    res = db.Purchase.destroy({
+    res = await db.Purchase.destroy({
       where: {
         userId: toBeDeleted.userId,
         gameId: toBeDeleted.gameId,
