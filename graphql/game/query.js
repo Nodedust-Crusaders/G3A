@@ -16,7 +16,12 @@ const gameQuery = new GraphQLObjectType({
     games: {
       type: new GraphQLList(gameType),
       resolve: async (source, args, context) => {
-        if (!context.user) return null;
+        if (
+          !context.user ||
+          !(await context.user.can(AdminPermissions.FULL_ACCESS_GAME))
+        )
+          return null;
+
         return getGames();
       },
     },
@@ -29,13 +34,14 @@ const gameQuery = new GraphQLObjectType({
         return getAvailableGames();
       },
     },
-    // This gets all games, filtered by category, publisher, platform or a mix of both.
-    // If admin, also shows unavailable games. If user, only available games that match the criteria are shown
-    availableGames: {
-      type: new GraphQLList(gameType),
-      resolve: async (source, args, context) => {
+    game: {
+      type: gameType,
+      args: {
+        id: { type: GraphQLID },
+      },
+      resolve: async (source, { id }, context) => {
         if (!context.user) return null;
-        return getAvailableGames();
+        return getGame(id);
       },
     },
 

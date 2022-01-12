@@ -1,9 +1,15 @@
-const { GraphQLObjectType, GraphQLNonNull, GraphQLID, GraphQLInt } = require("graphql");
+const {
+  GraphQLObjectType,
+  GraphQLNonNull,
+  GraphQLID,
+  GraphQLInt,
+} = require("graphql");
 const { purchaseInputType, purchaseResultType } = require("./types");
 const {
   addPurchaseHandler,
   removePurchaseHandler,
 } = require("../../handlers/purchases");
+const { AdminPermissions } = require("../../utils/constants");
 
 const purchaseMutation = new GraphQLObjectType({
   name: "PurchaseMutation",
@@ -29,7 +35,13 @@ const purchaseMutation = new GraphQLObjectType({
         UserId: { type: new GraphQLNonNull(GraphQLID) },
         GameId: { type: new GraphQLNonNull(GraphQLID) },
       },
-      resolve: async (source, args) => {
+      resolve: async (source, args, context) => {
+        if (
+          !context.user ||
+          !(await context.user.can(AdminPermissions.FULL_ACCESS_PURCHASE))
+        )
+          return null;
+
         const UserId = args.UserId;
         const GameId = args.GameId;
         const result = await addPurchaseHandler(UserId, GameId);
@@ -44,8 +56,14 @@ const purchaseMutation = new GraphQLObjectType({
         UserId: { type: new GraphQLNonNull(GraphQLID) },
         GameId: { type: new GraphQLNonNull(GraphQLID) },
       },
-      resolve: async (source, args) => {
-        const { UserId, GameId } = args.purchaseInput;
+      resolve: async (source, args, context) => {
+        if (
+          !context.user ||
+          !(await context.user.can(AdminPermissions.FULL_ACCESS_PURCHASE))
+        )
+          return null;
+
+        const { UserId, GameId } = args;
         const result = await removePurchaseHandler(UserId, GameId);
 
         return result;

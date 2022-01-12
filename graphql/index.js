@@ -4,6 +4,7 @@ const { authQuery, authMutation } = require("./auth");
 const { gameQuery, gameMutation } = require("./game");
 const { publisherQuery, publisherMutation } = require("./publisher");
 const { purchaseQuery, purchaseMutation } = require("./purchase");
+const {reviewMutation, reviewQuery} = require("./review");
 const { userType } = require("./user/types");
 
 const query = new GraphQLObjectType({
