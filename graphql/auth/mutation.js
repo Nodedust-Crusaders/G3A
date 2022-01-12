@@ -18,10 +18,7 @@ const {
   grantAdminRole,
   revokeAdminRole,
 } = require("../../handlers/authorization");
-const {
-  checkAuthorizationStatus,
-  checkAuthenticationStatus,
-} = require("../utils");
+const { checkAuthorizationStatus } = require("../utils");
 
 const authMutation = new GraphQLObjectType({
   name: "AuthMutation",
