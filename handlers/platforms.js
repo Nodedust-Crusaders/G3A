@@ -41,10 +41,7 @@ const editPlatform = async (platformId, newPlatformData) => {
     }
 
     res = await platformData.save(); // this updates the db.
-    return {
-      obiect: res.toString(),
-      message: "Succsess:",
-    };
+    return platformData;
   } catch (err) {
     console.log("Error @handlers/editPlatform:", err);
     return {
@@ -69,9 +66,7 @@ const createPlatform = async (platformData) => {
     }
 
     const newPlatform = await db.Platform.create(platformData);
-    return {
-      message: "Success",
-    };
+    return newPlatform;
   } catch (err) {
     console.log("Error @handlers/createPlatform:", err);
     return err;

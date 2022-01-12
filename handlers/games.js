@@ -26,14 +26,17 @@ const getAvailableGames = async () => {
   }
 };
 
-const getFilteredGames = async (CategoryId, PlatformId, PublisherId, showUnavailable) => {
+const getFilteredGames = async (
+  CategoryId,
+  PlatformId,
+  PublisherId,
+  showUnavailable
+) => {
   try {
-
     let queryObject = {};
     if (CategoryId) {
       queryObject.CategoryId = CategoryId;
-    } else
-    if (PlatformId) {
+    } else if (PlatformId) {
       queryObject.PlatformId = PlatformId;
     }
     if (PublisherId) {
@@ -44,14 +47,14 @@ const getFilteredGames = async (CategoryId, PlatformId, PublisherId, showUnavail
       queryObject.isAvailable = true;
     }
     const games = await db.Game.findAll({
-      where: queryObject
+      where: queryObject,
     });
     return games;
   } catch (err) {
     console.log("Error @handlers/getFilteredGames: ", err);
     return null;
   }
-}
+};
 
 const getGame = async (id) => {
   try {
@@ -80,10 +83,7 @@ const editGame = async (gameId, newGameData) => {
       }
     }
     res = await gameData.save(); // this updates the db.
-    return {
-      obiect: res.toString(),
-      message: "Success",
-    }
+    return gameData;
   } catch (err) {
     console.log("Error @handlers/editGame:", err);
     return {
@@ -105,7 +105,7 @@ const createGame = async (gameData) => {
     }
     if (gameData.CategoryId) {
       const category = await db.Category.findByPk(gameData.CategoryId);
-      console.log("psst",category)
+      console.log("psst", category);
       if (!category) {
         return {
           message: "Error: invalid category id",
@@ -121,9 +121,7 @@ const createGame = async (gameData) => {
       }
     }
     const newGame = await db.Game.create(gameData);
-    return {
-      message: "Success",
-    };
+    return newGame;
   } catch (err) {
     console.log("Error @handlers/createGame:", err);
     return err;
@@ -163,14 +161,11 @@ const setGameVisibility = async (id, status) => {
     }
     game.isAvailable = status;
     const res = await game.save();
-    return {
-      message: "Success",
-    };
+    return game;
   } catch (err) {
     console.log("Error @handlers/removeGame:", err);
     return null;
   }
-
 };
 module.exports = {
   getGames,

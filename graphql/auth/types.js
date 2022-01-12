@@ -7,13 +7,14 @@ const {
 } = require("graphql");
 const db = require("../../models");
 const { userType } = require("../user/types");
+const { messageResultType } = require("../types");
 
-const messageResultType = new GraphQLObjectType({
-  name: "MessageResult",
-  fields: {
-    message: { type: new GraphQLNonNull(GraphQLString) },
-  },
-});
+// const messageResultType = new GraphQLObjectType({
+//   name: "MessageResult",
+//   fields: {
+//     message: { type: new GraphQLNonNull(GraphQLString) },
+//   },
+// });
 
 const loginInputType = new GraphQLInputObjectType({
   name: "LoginInput",

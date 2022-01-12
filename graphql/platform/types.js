@@ -4,7 +4,10 @@ const {
   GraphQLString,
   GraphQLNonNull,
   GraphQLInputObjectType,
+  GraphQLUnionType,
 } = require("graphql");
+const { messageResultType } = require("../types");
+const db = require("../../models");
 
 const platformType = new GraphQLObjectType({
   name: "PlatformType",
@@ -23,12 +26,15 @@ const platformInputType = new GraphQLInputObjectType({
   },
 });
 
-const platformResultType = new GraphQLObjectType({
+const platformResultType = new GraphQLUnionType({
   name: "PlatformResult",
-  fields: {
-    message: {
-      type: new GraphQLNonNull(GraphQLString),
-    },
+  types: [platformType, messageResultType],
+  resolveType: (value) => {
+    if (value instanceof db.Platform) {
+      return "PlatformType";
+    }
+
+    return "MessageResult";
   },
 });
 

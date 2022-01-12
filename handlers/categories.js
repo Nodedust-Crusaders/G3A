@@ -41,10 +41,7 @@ const editCategory = async (categoryId, newCategoryData) => {
     }
 
     res = await categoryData.save(); // this updates the db.
-    return {
-      obiect: res.toString(),
-      message: "Success",
-    };
+    return categoryData;
   } catch (err) {
     console.log("Error @handlers/editCategory:", err);
     return {
@@ -69,9 +66,7 @@ const createCategory = async (categoryData) => {
     }
 
     const newCategory = await db.Category.create(categoryData);
-    return {
-      message: "Success",
-    };
+    return newCategory;
   } catch (err) {
     console.log("Error @handlers/createCategory:", err);
     return err;
