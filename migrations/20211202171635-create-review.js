@@ -2,12 +2,12 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable("Reviews", {
-      id: {
-        allowNull: false,
-        autoIncrement: true,
-        primaryKey: true,
-        type: Sequelize.INTEGER,
-      },
+      // id: {
+      //   allowNull: false,
+      //   autoIncrement: true,
+      //   primaryKey: true,
+      //   type: Sequelize.INTEGER,
+      // },
       UserId: {
         type: Sequelize.INTEGER,
         references: {
@@ -16,6 +16,7 @@ module.exports = {
           },
           key: "id",
         },
+        primaryKey: true,
       },
       GameId: {
         type: Sequelize.INTEGER,
@@ -25,6 +26,7 @@ module.exports = {
           },
           key: "id",
         },
+        primaryKey: true,
       },
       comment: {
         type: Sequelize.STRING,

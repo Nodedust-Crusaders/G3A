@@ -1,5 +1,5 @@
 "use strict";
-const { gamesNames } = require("../utils/getGamesData");
+const { gamesNames, getRand } = require("../utils/getGamesData");
 
 const {
   NUMBER_OF_USERS,
@@ -8,20 +8,21 @@ const {
 } = require("../utils/constants");
 const NUMBER_OF_GAMES = gamesNames.length;
 
+
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     const purchases = [];
     for (let i = 0; i < NUMBER_OF_PURCHASES; i++) {
       const price = prices[Math.floor(Math.random() * prices.length)];
+      let UserId = getRand(NUMBER_OF_USERS);
+      let GameId = getRand(NUMBER_OF_GAMES);
+      while(purchases.filter(pur => pur.GameId === GameId && pur.UserId === UserId).length > 0){
+        UserId = getRand(NUMBER_OF_USERS);
+        GameId = getRand(NUMBER_OF_GAMES);
+      }
       purchases.push({
-        UserId: Math.min(
-          NUMBER_OF_USERS,
-          1 + Math.floor(Math.random() * (NUMBER_OF_USERS + 0.2))
-        ),
-        GameId: Math.min(
-          NUMBER_OF_GAMES,
-          1 + Math.floor(Math.random() * (NUMBER_OF_GAMES + 0.2))
-        ),
+        UserId,
+        GameId,
         price,
         createdAt: new Date(),
         updatedAt: new Date(),

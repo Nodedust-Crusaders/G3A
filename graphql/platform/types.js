@@ -3,6 +3,7 @@ const {
   GraphQLID,
   GraphQLString,
   GraphQLNonNull,
+  GraphQLInputObjectType,
 } = require("graphql");
 
 const platformType = new GraphQLObjectType({
@@ -13,4 +14,22 @@ const platformType = new GraphQLObjectType({
   },
 });
 
-module.exports = { platformType };
+const platformInputType = new GraphQLInputObjectType({
+  name: "PlatformInput",
+  fields: {
+    name: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+  },
+});
+
+const platformResultType = new GraphQLObjectType({
+  name: "PlatformResult",
+  fields: {
+    message: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+  },
+});
+
+module.exports = { platformType, platformInputType, platformResultType };

@@ -61,7 +61,7 @@ const removePublisher = async (id) => {
                 message: "Publisher with id " + id + " does not exist"
             }
         }
-        res = db.Publisher.destroy({
+        res = await db.Publisher.destroy({
             where: {
                 id: publisher.id
             }
@@ -89,7 +89,7 @@ const editPublisher = async (id, name) => {
             }
         }
         publisher.name = name;
-        let res = publisher.save()
+        let res = await publisher.save()
         return {
             message: "Success"
         };
