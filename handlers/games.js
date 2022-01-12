@@ -26,6 +26,33 @@ const getAvailableGames = async () => {
   }
 };
 
+const getFilteredGames = async (CategoryId, PlatformId, PublisherId, showUnavailable) => {
+  try {
+
+    let queryObject = {};
+    if (CategoryId) {
+      queryObject.CategoryId = CategoryId;
+    } else
+    if (PlatformId) {
+      queryObject.PlatformId = PlatformId;
+    }
+    if (PublisherId) {
+      queryObject.PublisherId = PublisherId;
+    }
+
+    if (!showUnavailable) {
+      queryObject.isAvailable = true;
+    }
+    const games = await db.Game.findAll({
+      where: queryObject
+    });
+    return games;
+  } catch (err) {
+    console.log("Error @handlers/getFilteredGames: ", err);
+    return null;
+  }
+}
+
 const getGame = async (id) => {
   try {
     const game = await db.Game.findByPk(id);
@@ -55,7 +82,7 @@ const editGame = async (gameId, newGameData) => {
     res = await gameData.save(); // this updates the db.
     return {
       obiect: res.toString(),
-      message: "Succsess:",
+      message: "Success",
 
     }
 
@@ -71,7 +98,7 @@ const editGame = async (gameId, newGameData) => {
 const createGame = async (gameData) => {
   try {
     if (gameData.PlatformId) {
-      const platform = await db.findByPk(gameData.PlatformId);
+      const platform = await db.Platform.findByPk(gameData.PlatformId);
       if (!platform) {
         return {
           message: "Error: Invalid platform id"
@@ -79,15 +106,16 @@ const createGame = async (gameData) => {
       }
     }
     if (gameData.CategoryId) {
-      const category = await db.findByPk(gameData.CategoryId);
+      const category = await db.Category.findByPk(gameData.CategoryId);
+      console.log("psst",category)
       if (!category) {
         return {
           message: "Error: invalid category id"
         }
       }
     }
-    if (gameData.PlatformId) {
-      const publisher = await db.findByPk(gameData.PublisherId);
+    if (gameData.PublisherId) {
+      const publisher = await db.Publisher.findByPk(gameData.PublisherId);
       if (!publisher) {
         return {
           message: "Error: invalid publisher id"
@@ -145,4 +173,4 @@ const setGameVisibility = async (id, status) => {
     return null;
   }
 }
-module.exports = { getGames, getAvailableGames, getGame, createGame, destroyGame, editGame, setGameVisibility };
+module.exports = { getGames, getAvailableGames, getGame, createGame, destroyGame, editGame, setGameVisibility, getFilteredGames };

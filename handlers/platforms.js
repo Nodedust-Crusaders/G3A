@@ -86,7 +86,7 @@ const destroyPlatform = async (id) => {
         message: "Platform does not exist",
       };
     }
-    res = db.Platform.destroy({
+    res = await db.Platform.destroy({
       where: {
         id: platform.id,
       },
