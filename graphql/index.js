@@ -3,7 +3,8 @@ const { getAllUsers } = require("../handlers/users");
 const { authQuery, authMutation } = require("./auth");
 const { gameQuery, gameMutation } = require("./game");
 const { purchaseQuery, purchaseMutation } = require("./purchase");
-const {reviewMutation, reviewQuery} = require("./review");
+const { reviewMutation, reviewQuery } = require("./review");
+const { categoryMutation, categoryQuery } = require("./category");
 const { userType } = require("./user/types");
 
 const query = new GraphQLObjectType({
@@ -19,6 +20,7 @@ const query = new GraphQLObjectType({
     ...gameQuery.toConfig().fields,
     ...purchaseQuery.toConfig().fields,
     ...reviewQuery.toConfig().fields,
+    ...categoryQuery.toConfig().fields,
   },
 });
 
@@ -29,6 +31,7 @@ const mutation = new GraphQLObjectType({
     ...gameMutation.toConfig().fields,
     ...purchaseMutation.toConfig().fields,
     ...reviewMutation.toConfig().fields,
+    ...categoryMutation.toConfig().fields,
   },
 });
 
