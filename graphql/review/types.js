@@ -29,12 +29,12 @@ const reviewType = new GraphQLObjectType({
   },
 });
 
-const reviewResultType = new GraphQLObjectType({
-  name: "reviewResult",
-  fields: {
-    message: { type: GraphQLString },
-  },
-});
+// const reviewResultType = new GraphQLObjectType({
+//   name: "reviewResult",
+//   fields: {
+//     message: { type: GraphQLString },
+//   },
+// });
 
 const reviewResultType = new GraphQLUnionType({
   name: "ReviewResult",
