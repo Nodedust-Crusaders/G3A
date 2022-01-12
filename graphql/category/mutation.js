@@ -17,6 +17,7 @@ const {
   categoryInputType,
   categoryResultType,
 } = require("./types");
+const { checkAuthorizationStatus } = require("../utils");
 
 const categoryMutation = new GraphQLObjectType({
   name: "CategoryMutation",

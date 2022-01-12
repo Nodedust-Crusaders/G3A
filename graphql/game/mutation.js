@@ -7,13 +7,14 @@ const {
 } = require("graphql");
 const { AdminPermissions } = require("../../utils/constants");
 const { gameInputType, gameResultType, editGameInputType } = require("./types");
-
 const {
   createGame,
   destroyGame,
   setGameVisibility,
   editGame,
 } = require("../../handlers/games");
+const { checkAuthorizationStatus } = require("../utils");
+
 const gameMutation = new GraphQLObjectType({
   name: "GameMutation",
   fields: {

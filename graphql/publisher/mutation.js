@@ -12,6 +12,7 @@ const {
 } = require("../../handlers/publishers");
 const { AdminPermissions } = require("../../utils/constants");
 const { publisherType, publisherResultType } = require("./types");
+const { checkAuthorizationStatus } = require("../utils");
 
 const publisherMutation = new GraphQLObjectType({
   name: "PublisherMutation",

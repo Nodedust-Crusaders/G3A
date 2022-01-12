@@ -10,6 +10,7 @@ const {
   platformInputType,
   platformResultType,
 } = require("./types");
+const { checkAuthorizationStatus } = require("../utils");
 
 const platformMutation = new GraphQLObjectType({
   name: "PlatformMutation",

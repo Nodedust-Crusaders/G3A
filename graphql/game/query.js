@@ -7,6 +7,7 @@ const {
 } = require("../../handlers/games");
 const { AdminPermissions } = require("../../utils/constants");
 const { gameType } = require("./types");
+const { checkAuthorizationStatus } = require("../utils");
 
 const gameQuery = new GraphQLObjectType({
   name: "GameQuery",
