@@ -32,6 +32,7 @@ const createUser = async ({
       password: hashedPassword,
       firstName,
       lastName,
+      RoleId: 0,
     });
 
     return newUser;

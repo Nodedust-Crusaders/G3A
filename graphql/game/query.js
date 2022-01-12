@@ -1,5 +1,10 @@
 const { GraphQLObjectType, GraphQLID, GraphQLList } = require("graphql");
-const { getGame, getGames, getAvailableGames } = require("../../handlers/games");
+const {
+  getGame,
+  getGames,
+  getAvailableGames,
+} = require("../../handlers/games");
+const { AdminPermissions } = require("../../utils/constants");
 const { gameType } = require("./types");
 
 const gameQuery = new GraphQLObjectType({
@@ -10,7 +15,12 @@ const gameQuery = new GraphQLObjectType({
     games: {
       type: new GraphQLList(gameType),
       resolve: async (source, args, context) => {
-        if (!context.user) return null;
+        if (
+          !context.user ||
+          !(await context.user.can(AdminPermissions.FULL_ACCESS_GAME))
+        )
+          return null;
+
         return getGames();
       },
     },
@@ -24,7 +34,7 @@ const gameQuery = new GraphQLObjectType({
       },
     },
     game: {
-      type: gameType,   
+      type: gameType,
       args: {
         id: { type: GraphQLID },
       },
