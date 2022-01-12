@@ -20,28 +20,29 @@ const reviewMutation = new GraphQLObjectType({
     review: {
       type: reviewResultType,
       args: {
-        UserId: {type: GraphQLID},
+        UserId: { type: GraphQLID },
         GameId: { type: new GraphQLNonNull(GraphQLID) },
         rating: { type: GraphQLFloat },
         comment: { type: GraphQLString },
       },
-      resolve: async (source, {UserId, GameId, rating, comment }, context) => {
-        if (!context.user) return null;
-        if(!UserId){
+      resolve: async (source, { UserId, GameId, rating, comment }, context) => {
+        if (!context.user)
+          return {
+            message: "You have to me authenticated to access this resource",
+          };
+
+        if (!UserId) {
           UserId = context.user.id;
         } else {
-          if(!(await context.user.can(AdminPermissions.FULL_ACCESS_REVIEW))) {
-            return null;
+          if (!(await context.user.can(AdminPermissions.FULL_ACCESS_REVIEW))) {
+            return {
+              message: "You have to me authenticated to access this resource",
+            };
           }
         }
-        const result = await addReviewHandler(
-          UserId,
-          GameId,
-          rating,
-          comment
-        );
+        const result = await addReviewHandler(UserId, GameId, rating, comment);
         return result;
-      }
+      },
     },
 
     editReview: {
@@ -50,24 +51,27 @@ const reviewMutation = new GraphQLObjectType({
         UserId: { type: GraphQLID },
         GameId: { type: new GraphQLNonNull(GraphQLID) },
         comment: { type: GraphQLString },
-        rating: { type: GraphQLFloat }
-          
+        rating: { type: GraphQLFloat },
       },
       resolve: async (source, { UserId, GameId, comment, rating }, context) => {
-        
-        if(!context.user) return null;
-        if(!UserId) {
+        if (!context.user)
+          return {
+            message: "You have to me authenticated to access this resource",
+          };
+
+        if (!UserId) {
           UserId = context.user.id;
         } else {
-          if(!(await context.user.can(AdminPermissions.FULL_ACCESS_REVIEW))) {
-             return null;
+          if (!(await context.user.can(AdminPermissions.FULL_ACCESS_REVIEW))) {
+            return {
+              message: "You have to me authenticated to access this resource",
+            };
           }
         }
         const result = await editReviewHandler(UserId, GameId, comment, rating);
 
         return result;
-
-      }
+      },
     },
 
     // delete review from db. #ROLE only admins should be able to do this
@@ -78,11 +82,18 @@ const reviewMutation = new GraphQLObjectType({
         GameId: { type: new GraphQLNonNull(GraphQLID) },
       },
       resolve: async (source, { UserId, GameId }, context) => {
-        if(!context.user) return null;
-        if(!UserId) {
+        if (!context.user)
+          return {
+            message: "You have to me authenticated to access this resource",
+          };
+
+        if (!UserId) {
           UserId = context.user.id;
         } else {
-          if(!(await context.user.can(AdminPermissions.FULL_ACCESS_REVIEW))) return null;
+          if (!(await context.user.can(AdminPermissions.FULL_ACCESS_REVIEW)))
+            return {
+              message: "You have to me authenticated to access this resource",
+            };
         }
         const result = await removeReviewHandler(UserId, GameId);
         return result;

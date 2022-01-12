@@ -7,13 +7,14 @@ const {
 } = require("graphql");
 const { AdminPermissions } = require("../../utils/constants");
 const { gameInputType, gameResultType, editGameInputType } = require("./types");
-
 const {
   createGame,
   destroyGame,
   setGameVisibility,
   editGame,
 } = require("../../handlers/games");
+const { checkAuthorizationStatus } = require("../utils");
+
 const gameMutation = new GraphQLObjectType({
   name: "GameMutation",
   fields: {
@@ -23,11 +24,11 @@ const gameMutation = new GraphQLObjectType({
         gameInput: { type: gameInputType },
       },
       resolve: async (source, args, context) => {
-        if (
-          !context.user ||
-          !(await context.user.can(AdminPermissions.FULL_ACCESS_GAME))
-        )
-          return null;
+        const authzStatus = await checkAuthorizationStatus(
+          context,
+          AdminPermissions.FULL_ACCESS_GAME
+        );
+        if (authzStatus) return authzStatus;
 
         const data = args.gameInput;
         const result = await createGame(data);
@@ -42,11 +43,11 @@ const gameMutation = new GraphQLObjectType({
         id: { type: GraphQLInt },
       },
       resolve: async (source, args, context) => {
-        if (
-          !context.user ||
-          !(await context.user.can(AdminPermissions.FULL_ACCESS_GAME))
-        )
-          return null;
+        const authzStatus = await checkAuthorizationStatus(
+          context,
+          AdminPermissions.FULL_ACCESS_GAME
+        );
+        if (authzStatus) return authzStatus;
 
         const result = await destroyGame(args.id);
 
@@ -62,11 +63,11 @@ const gameMutation = new GraphQLObjectType({
         status: { type: GraphQLBoolean },
       },
       resolve: async (source, args, context) => {
-        if (
-          !context.user ||
-          !(await context.user.can(AdminPermissions.FULL_ACCESS_GAME))
-        )
-          return null;
+        const authzStatus = await checkAuthorizationStatus(
+          context,
+          AdminPermissions.FULL_ACCESS_GAME
+        );
+        if (authzStatus) return authzStatus;
 
         const result = await setGameVisibility(args.id, args.status);
 
@@ -82,11 +83,11 @@ const gameMutation = new GraphQLObjectType({
         },
       },
       resolve: async (source, args, context) => {
-        if (
-          !context.user ||
-          !(await context.user.can(AdminPermissions.FULL_ACCESS_GAME))
-        )
-          return null;
+        const authzStatus = await checkAuthorizationStatus(
+          context,
+          AdminPermissions.FULL_ACCESS_GAME
+        );
+        if (authzStatus) return authzStatus;
 
         const id = args.data.id;
         const data = args.data.newGameData;

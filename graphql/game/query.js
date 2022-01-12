@@ -7,6 +7,7 @@ const {
 } = require("../../handlers/games");
 const { AdminPermissions } = require("../../utils/constants");
 const { gameType } = require("./types");
+const { checkAuthorizationStatus } = require("../utils");
 
 const gameQuery = new GraphQLObjectType({
   name: "GameQuery",
@@ -16,11 +17,11 @@ const gameQuery = new GraphQLObjectType({
     games: {
       type: new GraphQLList(gameType),
       resolve: async (source, args, context) => {
-        if (
-          !context.user ||
-          !(await context.user.can(AdminPermissions.FULL_ACCESS_GAME))
-        )
-          return null;
+        const authzStatus = await checkAuthorizationStatus(
+          context,
+          AdminPermissions.FULL_ACCESS_GAME
+        );
+        if (authzStatus) return null;
 
         return getGames();
       },
@@ -50,17 +51,22 @@ const gameQuery = new GraphQLObjectType({
       args: {
         categoryId: { type: GraphQLID },
         platformId: { type: GraphQLID },
-        publisherId: { type: GraphQLID }
+        publisherId: { type: GraphQLID },
       },
       resolve: async (source, args, context) => {
         if (!context.user) return null;
         let showUnavailable = false;
-        
+
         if (!(await context.user.can(AdminPermissions.FULL_ACCESS_GAME))) {
           showUnavailable = true;
         }
 
-        res = getFilteredGames(args.categoryId, args.platformId, args.publisherId, showUnavailable);
+        res = getFilteredGames(
+          args.categoryId,
+          args.platformId,
+          args.publisherId,
+          showUnavailable
+        );
         return res;
       },
     },
