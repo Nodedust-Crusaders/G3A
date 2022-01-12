@@ -41,4 +41,9 @@ module.exports.gamesPublishers = getGamesPublishers()
 
 module.exports.rawGamesData = gamesData
 
+module.exports.getRand = (limit) => Math.min(
+    limit,
+    1 + Math.floor(Math.random() * (limit + 0.2))
+  );
+
 

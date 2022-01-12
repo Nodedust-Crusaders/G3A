@@ -53,6 +53,43 @@ const addReviewHandler = async (userId, gameId, rating, comment) => {
 	}
 }
 
+const editReviewHandler = async (UserId, GameId, comment, rating) => {
+	
+	try {
+		let review = await db.Review.findOne({where: {
+			UserId: UserId,
+			GameId: GameId
+		}});
+	
+		if (!review) {
+		  return {
+			message: "Review does not exist. Nothing to edit."
+		  }
+		}
+
+		if(comment) {
+			review.comment = comment;
+		}
+		if(rating) {
+			review.rating = rating;
+		}
+
+		res = await review.save(); // this updates the db.
+		return {
+		  obiect: res.toString(),
+		  message: "Succsess:",
+	
+		}
+	
+	  } catch (err) {
+		console.log("Error @handlers/editReviewHandler:", err);
+		return {
+		  message: err,
+		  obj: null
+		}
+	  }
+}
+
 const removeReviewHandler = async (userId, gameId) => {
 	try {
 		const user = await db.User.findByPk(userId);
@@ -100,4 +137,4 @@ const removeReviewHandler = async (userId, gameId) => {
 }
 
 
-module.exports = { getReviews, getUserReviewsWithId, addReviewHandler, removeReviewHandler }
+module.exports = { getReviews, getUserReviewsWithId, addReviewHandler, removeReviewHandler, editReviewHandler }
