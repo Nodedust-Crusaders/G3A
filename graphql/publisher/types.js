@@ -13,4 +13,9 @@ const publisherType = new GraphQLObjectType({
   },
 });
 
-module.exports = { publisherType };
+const publisherResultType = new GraphQLObjectType({
+  name: "PublisherResult",
+  fields: {
+    message: { type: new GraphQLNonNull(GraphQLString) },
+  }})
+module.exports = { publisherType, publisherResultType };

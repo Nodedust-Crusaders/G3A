@@ -3,6 +3,7 @@ const {
   getGame,
   getGames,
   getAvailableGames,
+  getFilteredGames,
 } = require("../../handlers/games");
 const { AdminPermissions } = require("../../utils/constants");
 const { gameType } = require("./types");
@@ -41,6 +42,26 @@ const gameQuery = new GraphQLObjectType({
       resolve: async (source, { id }, context) => {
         if (!context.user) return null;
         return getGame(id);
+      },
+    },
+
+    filteredGames: {
+      type: new GraphQLList(gameType),
+      args: {
+        categoryId: { type: GraphQLID },
+        platformId: { type: GraphQLID },
+        publisherId: { type: GraphQLID }
+      },
+      resolve: async (source, args, context) => {
+        if (!context.user) return null;
+        let showUnavailable = false;
+        
+        if (!(await context.user.can(AdminPermissions.FULL_ACCESS_GAME))) {
+          showUnavailable = true;
+        }
+
+        res = getFilteredGames(args.categoryId, args.platformId, args.publisherId, showUnavailable);
+        return res;
       },
     },
   },
