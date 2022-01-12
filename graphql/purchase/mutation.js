@@ -10,6 +10,7 @@ const {
   removePurchaseHandler,
 } = require("../../handlers/purchases");
 const { AdminPermissions } = require("../../utils/constants");
+const { checkAuthorizationStatus } = require("../utils");
 
 const purchaseMutation = new GraphQLObjectType({
   name: "PurchaseMutation",
@@ -36,11 +37,11 @@ const purchaseMutation = new GraphQLObjectType({
         GameId: { type: new GraphQLNonNull(GraphQLID) },
       },
       resolve: async (source, args, context) => {
-        if (
-          !context.user ||
-          !(await context.user.can(AdminPermissions.FULL_ACCESS_PURCHASE))
-        )
-          return null;
+        const authzStatus = await checkAuthorizationStatus(
+          context,
+          AdminPermissions.FULL_ACCESS_PURCHASE
+        );
+        if (authzStatus) return authzStatus;
 
         const UserId = args.UserId;
         const GameId = args.GameId;
@@ -57,11 +58,11 @@ const purchaseMutation = new GraphQLObjectType({
         GameId: { type: new GraphQLNonNull(GraphQLID) },
       },
       resolve: async (source, args, context) => {
-        if (
-          !context.user ||
-          !(await context.user.can(AdminPermissions.FULL_ACCESS_PURCHASE))
-        )
-          return null;
+        const authzStatus = await checkAuthorizationStatus(
+          context,
+          AdminPermissions.FULL_ACCESS_PURCHASE
+        );
+        if (authzStatus) return authzStatus;
 
         const { UserId, GameId } = args;
         const result = await removePurchaseHandler(UserId, GameId);

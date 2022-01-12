@@ -27,11 +27,11 @@ const categoryMutation = new GraphQLObjectType({
         categoryInput: { type: categoryInputType },
       },
       resolve: async (source, args, context) => {
-        if (
-          !context.user ||
-          !(await context.user.can(AdminPermissions.FULL_ACCESS_CATEGORY))
-        )
-          return null;
+        const authzStatus = await checkAuthorizationStatus(
+          context,
+          AdminPermissions.FULL_ACCESS_CATEGORY
+        );
+        if (authzStatus) return authzStatus;
 
         const data = args.categoryInput;
         console.log(data);
@@ -47,11 +47,11 @@ const categoryMutation = new GraphQLObjectType({
         data: { type: categoryInputType },
       },
       resolve: async (source, args, context) => {
-        if (
-          !context.user ||
-          !(await context.user.can(AdminPermissions.FULL_ACCESS_CATEGORY))
-        )
-          return null;
+        const authzStatus = await checkAuthorizationStatus(
+          context,
+          AdminPermissions.FULL_ACCESS_CATEGORY
+        );
+        if (authzStatus) return authzStatus;
 
         const id = args.id;
         const data = args.data;
@@ -66,11 +66,11 @@ const categoryMutation = new GraphQLObjectType({
         id: { type: new GraphQLNonNull(GraphQLID) },
       },
       resolve: async (source, args, context) => {
-        if (
-          !context.user ||
-          !(await context.user.can(AdminPermissions.FULL_ACCESS_CATEGORY))
-        )
-          return null;
+        const authzStatus = await checkAuthorizationStatus(
+          context,
+          AdminPermissions.FULL_ACCESS_CATEGORY
+        );
+        if (authzStatus) return authzStatus;
 
         const result = await destroyCategory(args.id);
         return result;

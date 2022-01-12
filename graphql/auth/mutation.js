@@ -18,6 +18,10 @@ const {
   grantAdminRole,
   revokeAdminRole,
 } = require("../../handlers/authorization");
+const {
+  checkAuthorizationStatus,
+  checkAuthenticationStatus,
+} = require("../utils");
 
 const authMutation = new GraphQLObjectType({
   name: "AuthMutation",
@@ -57,11 +61,11 @@ const authMutation = new GraphQLObjectType({
         id: { type: new GraphQLNonNull(GraphQLID) },
       },
       resolve: async (source, args, context) => {
-        if (
-          !context.user ||
-          !(await context.user.can(AdminPermissions.UPDATE_ROLE))
-        )
-          return null;
+        const authzStatus = await checkAuthorizationStatus(
+          context,
+          AdminPermissions.UPDATE_ROLE
+        );
+        if (authzStatus) return authzStatus;
 
         const id = args.id;
         const result = await grantAdminRole(id);
@@ -75,11 +79,11 @@ const authMutation = new GraphQLObjectType({
         id: { type: new GraphQLNonNull(GraphQLID) },
       },
       resolve: async (source, args, context) => {
-        if (
-          !context.user ||
-          !(await context.user.can(AdminPermissions.UPDATE_ROLE))
-        )
-          return null;
+        const authzStatus = await checkAuthorizationStatus(
+          context,
+          AdminPermissions.UPDATE_ROLE
+        );
+        if (authzStatus) return authzStatus;
 
         const id = args.id;
         const result = await revokeAdminRole(id);
