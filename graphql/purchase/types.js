@@ -5,9 +5,12 @@ const {
   GraphQLFloat,
   GraphQLNonNull,
   GraphQLString,
+  GraphQLUnionType,
 } = require("graphql");
 const { gameType } = require("../game/types");
 const { userType } = require("../user/types");
+const { messageResultType } = require("../types");
+const db = require("../../models");
 
 const purchaseType = new GraphQLObjectType({
   name: "PurchaseType",
@@ -28,11 +31,16 @@ const purchaseType = new GraphQLObjectType({
   },
 });
 
+const purchaseResultType = new GraphQLUnionType({
+  name: "PurchaseResult",
+  types: [purchaseType, messageResultType],
+  resolveType: (value) => {
+    if (value instanceof db.Purchase) {
+      return "PurchaseType";
+    }
 
-const purchaseResultType = new GraphQLObjectType({
-  name: "purchaseResult",
-  fields: {
-    message: { type: GraphQLString },
+    return "MessageResult";
   },
 });
+
 module.exports = { purchaseType, purchaseResultType };

@@ -3,7 +3,10 @@ const {
   GraphQLID,
   GraphQLString,
   GraphQLNonNull,
+  GraphQLUnionType,
 } = require("graphql");
+const { messageResultType } = require("../types");
+const db = require("../../models");
 
 const publisherType = new GraphQLObjectType({
   name: "PublisherType",
@@ -13,9 +16,16 @@ const publisherType = new GraphQLObjectType({
   },
 });
 
-const publisherResultType = new GraphQLObjectType({
+const publisherResultType = new GraphQLUnionType({
   name: "PublisherResult",
-  fields: {
-    message: { type: new GraphQLNonNull(GraphQLString) },
-  }})
+  types: [publisherType, messageResultType],
+  resolveType: (value) => {
+    if (value instanceof db.Publisher) {
+      return "PublisherType";
+    }
+
+    return "MessageResult";
+  },
+});
+
 module.exports = { publisherType, publisherResultType };

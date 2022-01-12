@@ -4,7 +4,10 @@ const {
   GraphQLString,
   GraphQLNonNull,
   GraphQLInputObjectType,
+  GraphQLUnionType,
 } = require("graphql");
+const { messageResultType } = require("../types");
+const db = require("../../models");
 
 const categoryType = new GraphQLObjectType({
   name: "CategoryType",
@@ -23,12 +26,15 @@ const categoryInputType = new GraphQLInputObjectType({
   },
 });
 
-const categoryResultType = new GraphQLObjectType({
+const categoryResultType = new GraphQLUnionType({
   name: "CategoryResult",
-  fields: {
-    message: {
-      type: new GraphQLNonNull(GraphQLString),
-    },
+  types: [categoryType, messageResultType],
+  resolveType: (value) => {
+    if (value instanceof db.Category) {
+      return "CategoryType";
+    }
+
+    return "MessageResult";
   },
 });
 

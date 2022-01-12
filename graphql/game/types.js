@@ -7,7 +7,9 @@ const {
   GraphQLFloat,
   GraphQLInputObjectType,
   GraphQLBoolean,
+  GraphQLUnionType,
 } = require("graphql");
+const { messageResultType } = require("../types");
 const db = require("../../models");
 const { categoryType } = require("../category/types");
 const { platformType } = require("../platform/types");
@@ -18,7 +20,7 @@ const gameType = new GraphQLObjectType({
   fields: {
     id: { type: GraphQLID },
     title: { type: new GraphQLNonNull(GraphQLString) },
-    isAvailable: {type: GraphQLBoolean},
+    isAvailable: { type: GraphQLBoolean },
     description: { type: GraphQLString },
     releaseYear: { type: GraphQLInt },
     rating: { type: GraphQLFloat },
@@ -58,23 +60,34 @@ const gameInputType = new GraphQLInputObjectType({
     discount: { type: GraphQLFloat },
     PlatformId: { type: GraphQLInt },
     CategoryId: { type: GraphQLInt },
-    PublisherId: { type: GraphQLInt }
-  }
-
+    PublisherId: { type: GraphQLInt },
+  },
 });
 
-const gameResultType = new GraphQLObjectType({
+// const gameResultType = new GraphQLObjectType({
+//   name: "GameResult",
+//   fields: {
+//     message: { type: new GraphQLNonNull(GraphQLString) },
+// }})
+
+const gameResultType = new GraphQLUnionType({
   name: "GameResult",
-  fields: {
-    message: { type: new GraphQLNonNull(GraphQLString) },
-  }})
+  types: [gameType, messageResultType],
+  resolveType: (value) => {
+    if (value instanceof db.Game) {
+      return "GameType";
+    }
+
+    return "MessageResult";
+  },
+});
+
 const editGameInputType = new GraphQLInputObjectType({
   name: "EditGameInputType",
   fields: {
     id: { type: GraphQLInt },
-    newGameData: { type: gameInputType }
-  }
-})
-
+    newGameData: { type: gameInputType },
+  },
+});
 
 module.exports = { gameType, gameInputType, gameResultType, editGameInputType };
