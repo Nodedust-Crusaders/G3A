@@ -47,7 +47,12 @@ const addPurchaseHandler = async (userId, gameId) => {
                 message: "Game does not exist"
             }
         }
-
+        
+        if (game.isAvailable === false) {
+            return {
+                message: "Game currently unavailable for purchase"
+            }
+        }
         const newPurchase = await db.Purchase.create({
             UserId: userId,
             GameId: gameId,
@@ -114,7 +119,8 @@ const removePurchaseHandler = async (userId, gameId) => {
         }
 
     } catch (err) {
-
+        console.error('Error @removeReviewHandler:', err);
+		return { message: err.message}
     }
 }
 module.exports = {getPurchases, getUserPurchasesWithId, addPurchaseHandler, removePurchaseHandler};
