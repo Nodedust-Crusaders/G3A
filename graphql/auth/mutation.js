@@ -3,10 +3,21 @@ const {
   loginInputType,
   registerInputType,
   registerResultType,
+  messageResultType,
 } = require("./types");
 const loginHandler = require("../../handlers/auth");
 const { createUser } = require("../../handlers/users");
-const { GraphQLObjectType, GraphQLString, GraphQLNonNull } = require("graphql");
+const {
+  GraphQLObjectType,
+  GraphQLString,
+  GraphQLNonNull,
+  GraphQLID,
+} = require("graphql");
+const { AdminPermissions } = require("../../utils/constants");
+const {
+  grantAdminRole,
+  revokeAdminRole,
+} = require("../../handlers/authorization");
 
 const authMutation = new GraphQLObjectType({
   name: "AuthMutation",
@@ -36,6 +47,42 @@ const authMutation = new GraphQLObjectType({
         const data = args.registerInput;
         const result = await createUser(data);
 
+        return result;
+      },
+    },
+
+    grantAdminRole: {
+      type: messageResultType,
+      args: {
+        id: { type: new GraphQLNonNull(GraphQLID) },
+      },
+      resolve: async (source, args, context) => {
+        if (
+          !context.user ||
+          !(await context.user.can(AdminPermissions.UPDATE_ROLE))
+        )
+          return null;
+
+        const id = args.id;
+        const result = await grantAdminRole(id);
+        return result;
+      },
+    },
+
+    revokeAdminRole: {
+      type: messageResultType,
+      args: {
+        id: { type: new GraphQLNonNull(GraphQLID) },
+      },
+      resolve: async (source, args, context) => {
+        if (
+          !context.user ||
+          !(await context.user.can(AdminPermissions.UPDATE_ROLE))
+        )
+          return null;
+
+        const id = args.id;
+        const result = await revokeAdminRole(id);
         return result;
       },
     },

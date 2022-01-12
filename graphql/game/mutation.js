@@ -1,37 +1,57 @@
-const { GraphQLObjectType, GraphQLString, GraphQLNonNull, GraphQLInt, GraphQLBoolean } = require("graphql");
 const {
-  gameInputType,
-  gameResultType,
-  editGameInputType,
-} = require("./types");
+  GraphQLObjectType,
+  GraphQLString,
+  GraphQLNonNull,
+  GraphQLInt,
+  GraphQLBoolean,
+} = require("graphql");
+const { AdminPermissions } = require("../../utils/constants");
+const { gameInputType, gameResultType, editGameInputType } = require("./types");
 
-const { createGame, destroyGame, setGameVisibility, editGame } = require("../../handlers/games");
+const {
+  createGame,
+  destroyGame,
+  setGameVisibility,
+  editGame,
+} = require("../../handlers/games");
 const gameMutation = new GraphQLObjectType({
   name: "GameMutation",
   fields: {
     addGame: {
       type: gameResultType,
       args: {
-        gameInput: { type: gameInputType }
+        gameInput: { type: gameInputType },
       },
-      resolve: async (source, args) => {
+      resolve: async (source, args, context) => {
+        if (
+          !context.user ||
+          !(await context.user.can(AdminPermissions.FULL_ACCESS_GAME))
+        )
+          return null;
+
         const data = args.gameInput;
         const result = await createGame(data);
 
         return result;
-      }
+      },
     },
     // deletes game from DB
     destroyGame: {
       type: gameResultType,
       args: {
-        id: { type: GraphQLInt }
+        id: { type: GraphQLInt },
       },
-      resolve: async (source, args) => {
+      resolve: async (source, args, context) => {
+        if (
+          !context.user ||
+          !(await context.user.can(AdminPermissions.FULL_ACCESS_GAME))
+        )
+          return null;
+
         const result = await destroyGame(args.id);
 
         return result;
-      }
+      },
     },
     // marks game as unavailable - is hidden from showAvailableGames query
     // why? to preserve purchase history.
@@ -39,28 +59,41 @@ const gameMutation = new GraphQLObjectType({
       type: gameResultType,
       args: {
         id: { type: GraphQLInt },
-        status: {type: GraphQLBoolean }
+        status: { type: GraphQLBoolean },
       },
-      resolve: async (source, args) => {
+      resolve: async (source, args, context) => {
+        if (
+          !context.user ||
+          !(await context.user.can(AdminPermissions.FULL_ACCESS_GAME))
+        )
+          return null;
+
         const result = await setGameVisibility(args.id, args.status);
 
         return result;
-      }
-    },    
-    
+      },
+    },
+
     editGame: {
       type: gameResultType,
       args: {
-        data:{
-          type: editGameInputType
-      }},
-      resolve: async (source, args) => {
+        data: {
+          type: editGameInputType,
+        },
+      },
+      resolve: async (source, args, context) => {
+        if (
+          !context.user ||
+          !(await context.user.can(AdminPermissions.FULL_ACCESS_GAME))
+        )
+          return null;
+
         const id = args.data.id;
         const data = args.data.newGameData;
         const result = await editGame(id, data);
 
         return result;
-      }
+      },
     },
   },
 });

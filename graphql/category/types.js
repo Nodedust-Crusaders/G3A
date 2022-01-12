@@ -3,6 +3,7 @@ const {
   GraphQLID,
   GraphQLString,
   GraphQLNonNull,
+  GraphQLInputObjectType,
 } = require("graphql");
 
 const categoryType = new GraphQLObjectType({
@@ -13,4 +14,22 @@ const categoryType = new GraphQLObjectType({
   },
 });
 
-module.exports = { categoryType };
+const categoryInputType = new GraphQLInputObjectType({
+  name: "CategoryInput",
+  fields: {
+    name: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+  },
+});
+
+const categoryResultType = new GraphQLObjectType({
+  name: "CategoryResult",
+  fields: {
+    message: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+  },
+});
+
+module.exports = { categoryType, categoryInputType, categoryResultType };

@@ -36,9 +36,6 @@ const createUser = async ({
     });
 
     return newUser;
-    // return {
-    //   message: "Successfully created the user",
-    // };
   } catch (err) {
     console.error("Error @registerHandler:", err);
     return { message: err.message };
