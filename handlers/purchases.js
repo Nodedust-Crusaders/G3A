@@ -106,8 +106,8 @@ const removePurchaseHandler = async (userId, gameId) => {
 
     res = await db.Purchase.destroy({
       where: {
-        userId: toBeDeleted.userId,
-        gameId: toBeDeleted.gameId,
+        userId: toBeDeleted.UserId,
+        gameId: toBeDeleted.GameId,
       },
     });
 

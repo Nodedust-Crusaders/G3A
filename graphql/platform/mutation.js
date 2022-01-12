@@ -26,7 +26,7 @@ const {
         resolve: async (source, args, context) => {
           if (
             !context.user ||
-            !(await context.user.can(AdminPermissions.FULL_ACCESS_CATEGORY))
+            !(await context.user.can(AdminPermissions.FULL_ACCESS_PLATFORM))
           )
             return null;
   
@@ -45,7 +45,7 @@ const {
         resolve: async (source, args, context) => {
           if (
             !context.user ||
-            !(await context.user.can(AdminPermissions.FULL_ACCESS_CATEGORY))
+            !(await context.user.can(AdminPermissions.FULL_ACCESS_PLATFORM))
           )
             return null;
   
@@ -64,7 +64,7 @@ const {
         resolve: async (source, args, context) => {
           if (
             !context.user ||
-            !(await context.user.can(AdminPermissions.FULL_ACCESS_CATEGORY))
+            !(await context.user.can(AdminPermissions.FULL_ACCESS_PLATFORM))
           )
             return null;
   
