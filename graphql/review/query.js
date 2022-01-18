@@ -25,7 +25,7 @@ const reviewQuery = new GraphQLObjectType({
 		reviewsWithUserId: {
 			type: new GraphQLList(reviewType),
 			args: {
-				id: { type: GraphQLID },
+				id: { type: new GraphQLNonNull(GraphQLID) },
 			},
 			resolve: async (source, { id }, context) => {
 				if(!context.user) return null;

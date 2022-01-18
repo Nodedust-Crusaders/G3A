@@ -1,4 +1,4 @@
-const { GraphQLObjectType, GraphQLID, GraphQLList } = require("graphql");
+const { GraphQLObjectType, GraphQLID, GraphQLList, GraphQLNonNull } = require("graphql");
 const { getPurchases, getPurchase } = require("../../handlers/purchases");
 const { getUserPurchasesWithId } = require("../../handlers/purchases");
 const { AdminPermissions } = require("../../utils/constants");
@@ -31,7 +31,7 @@ const purchaseQuery = new GraphQLObjectType({
     purchasesWithUserId: {
       type: new GraphQLList(purchaseType),
       args: {
-        id: { type: GraphQLID },
+        id: { type: new GraphQLNonNull(GraphQLID) },
       },
       resolve: async (source, { id }, context) => {
         if (
