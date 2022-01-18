@@ -37,6 +37,12 @@ const addReviewHandler = async (userId, gameId, rating, comment) => {
       };
     }
 
+    if (!game.isAvailable) {
+      return {
+        message: "Game is not available. You can't leave a review"
+      }
+    }
+
     const newReview = await db.Review.create({
       UserId: userId,
       GameId: gameId,
@@ -129,10 +135,22 @@ const removeReviewHandler = async (userId, gameId) => {
   }
 };
 
+const getGameReviewsWithId = async (id) => {
+  try {
+    const game = await db.Game.findByPk(id);
+    const reviews = await game.getReviews();
+    return reviews;
+  } catch (err) {
+    console.log("Error @handlers/getGameReviewsWithId:", err);
+    return null;
+  }
+};
+
 module.exports = {
   getReviews,
   getUserReviewsWithId,
   addReviewHandler,
   removeReviewHandler,
   editReviewHandler,
+  getGameReviewsWithId
 };
