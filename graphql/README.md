@@ -469,6 +469,18 @@ query ReviewsWithUserId {
   }
 }
 
+# Afiseaza recenziile la un anumit joc
+query ReviewsWithGameId {
+  reviewsWithGameId(id: 1){
+    game {
+      id
+      title
+    }
+    comment
+    rating
+  }
+}
+
 # Userul logat face o recenzie
 mutation AddReview {
   review(GameId: 10, rating: 3, comment: "Meeeerge") {

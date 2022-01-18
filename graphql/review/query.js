@@ -1,5 +1,5 @@
-const { GraphQLObjectType, GraphQLList, GraphQLID } = require("graphql");
-const { getUserReviewsWithId, getReviews } = require("../../handlers/reviews");
+const { GraphQLObjectType, GraphQLList, GraphQLID, GraphQLNonNull } = require("graphql");
+const { getUserReviewsWithId, getReviews, getGameReviewsWithId } = require("../../handlers/reviews");
 const { reviewType } = require("./types");
 
 const reviewQuery = new GraphQLObjectType({
@@ -30,6 +30,17 @@ const reviewQuery = new GraphQLObjectType({
 			resolve: async (source, { id }, context) => {
 				if(!context.user) return null;
 				return getUserReviewsWithId(id);
+			}
+		},
+
+		reviewsWithGameId: {
+			type: new GraphQLList(reviewType),
+			args: {
+				id: { type: new GraphQLNonNull(GraphQLID) },
+			},
+			resolve: async (source, { id }, context) => {
+				if(!context.user) return null;
+				return getGameReviewsWithId(id);
 			}
 		}
 	}
